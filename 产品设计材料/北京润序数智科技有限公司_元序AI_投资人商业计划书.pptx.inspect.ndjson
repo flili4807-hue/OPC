@@ -1,0 +1,383 @@
+{"kind":"deck","id":"pr/7ncivn","name":"Deck"}
+{"kind":"layout","layoutId":"4fb3d710-694e-4914-bdb7-0245bad62ae6","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"11bae24f-4062-492d-acd1-d56ca3e39f31","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/7yao2o","slide":1,"title":"元序AI","textShapes":7}
+{"kind":"textbox","id":"sh/zidonyd0","slide":1,"text":"元序AI","textPreview":"元序AI","textChars":4,"textLines":1,"bbox":[42,64,360,70]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":1,"text":"AI协同治理平台","textPreview":"AI协同治理平台","textChars":8,"textLines":1,"bbox":[42,144,520,44]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":1,"text":"面向复杂知识工作的项目管理体系诊断、Agent协同与交付治理平台","textPreview":"面向复杂知识工作的项目管理体系诊断、Agent协同与交付治理平台","textChars":32,"textLines":1,"bbox":[42,260,820,150]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":1,"text":"北京润序数智科技有限公司","textPreview":"北京润序数智科技有限公司","textChars":12,"textLines":1,"bbox":[42,562,520,36]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":1,"text":"投资人商业计划书 · 2026年7月","textPreview":"投资人商业计划书 · 2026年7月","textChars":18,"textLines":1,"bbox":[42,604,520,28]}
+{"kind":"shape","id":"sh/svu9knih","slide":1,"bbox":[900,84,296,480]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":1,"text":"不是再做一个项目管理工具","textPreview":"不是再做一个项目管理工具","textChars":12,"textLines":1,"bbox":[936,150,228,90]}
+{"kind":"shape","id":"sh/adsji5sn","slide":1,"bbox":[950,284,200,4]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":1,"text":"而是在客户现有工具上增加一层\nAI治理、诊断和交付闭环","textPreview":"而是在客户现有工具上增加一层 | AI治理、诊断和交付闭环","textChars":27,"textLines":2,"bbox":[930,326,240,120]}
+{"kind":"notes","id":"nt/7yao2o","slide":1,"text":""}
+{"kind":"slide","id":"sl/79gdt5","slide":2,"title":"INVESTOR DECK","textShapes":13}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":2,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":2,"text":"投资判断：项目管理正在从记录工具进入AI治理层","textPreview":"投资判断：项目管理正在从记录工具进入AI治理层","textChars":23,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/8v6psfil","slide":2,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":2,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":2,"text":"元序AI的机会不在替代飞书、Jira或禅道，而在连接这些工具，帮助企业把分散过程数据转化为可解释的管理判断和行动建议。","textPreview":"元序AI的机会不在替代飞书、Jira或禅道，而在连接这些工具，帮助企业把分散过程数据转化为可解释的管理判断和行动建议。","textChars":59,"textLines":1,"bbox":[42,160,960,74]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":2,"text":"强痛点","textPreview":"强痛点","textChars":3,"textLines":1,"bbox":[58,292,250,64]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":2,"text":"延期、返工、需求不清、风险发现晚","textPreview":"延期、返工、需求不清、风险发现晚","textChars":16,"textLines":1,"bbox":[58,364,250,52]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":2,"text":"高客单","textPreview":"高客单","textChars":3,"textLines":1,"bbox":[365,292,310,64]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":2,"text":"诊断、实施、专属云和年度订阅组合收费","textPreview":"诊断、实施、专属云和年度订阅组合收费","textChars":18,"textLines":1,"bbox":[365,364,310,52]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":2,"text":"可扩展","textPreview":"可扩展","textChars":3,"textLines":1,"bbox":[745,292,390,64]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":2,"text":"从研发交付切入，扩展到运营、咨询、内容和客服","textPreview":"从研发交付切入，扩展到运营、咨询、内容和客服","textChars":22,"textLines":1,"bbox":[745,364,390,52]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":2,"bbox":[42,512,1196,88]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":2,"text":"核心结论","textPreview":"核心结论","textChars":4,"textLines":1,"bbox":[68,534,120,28]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":2,"text":"先卖“管理改善结果”，再沉淀为标准化AI平台；先拿标杆客户验证ROI，再扩展为多场景模板市场。","textPreview":"先卖“管理改善结果”，再沉淀为标准化AI平台；先拿标杆客户验证ROI，再扩展为多场景模板市场。","textChars":47,"textLines":1,"bbox":[190,527,990,40]}
+{"kind":"notes","id":"nt/79gdt5","slide":2,"text":""}
+{"kind":"slide","id":"sl/j2ahfu","slide":3,"title":"INVESTOR DECK","textShapes":16}
+{"kind":"textbox","id":"sh/adsji5sn","slide":3,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":3,"text":"客户不是没有工具，而是缺少持续治理能力","textPreview":"客户不是没有工具，而是缺少持续治理能力","textChars":19,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/sji5snel","slide":3,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":3,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":3,"bbox":[58,174,360,180]}
+{"kind":"shape","id":"sh/s72x4nap","slide":3,"bbox":[58,174,8,180]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":3,"text":"需求不清","textPreview":"需求不清","textChars":4,"textLines":1,"bbox":[82,196,318,34]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":3,"text":"PRD、需求、任务和验收标准散落在文档、表格与聊天记录中，边界不清导致反复返工。","textPreview":"PRD、需求、任务和验收标准散落在文档、表格与聊天记录中，边界不清导致反复返工。","textChars":40,"textLines":1,"bbox":[82,242,318,96]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":3,"bbox":[460,174,360,180]}
+{"kind":"shape","id":"sh/18jqh0fe","slide":3,"bbox":[460,174,8,180]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":3,"text":"风险滞后","textPreview":"风险滞后","textChars":4,"textLines":1,"bbox":[484,196,318,34]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":3,"text":"项目经理靠周会和人工追问识别风险，问题暴露时已经影响交付周期和客户满意度。","textPreview":"项目经理靠周会和人工追问识别风险，问题暴露时已经影响交付周期和客户满意度。","textChars":37,"textLines":1,"bbox":[484,242,318,96]}
+{"kind":"shape","id":"sh/8bat47y1","slide":3,"bbox":[862,174,360,180]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":3,"bbox":[862,174,8,180]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":3,"text":"过程不透明","textPreview":"过程不透明","textChars":5,"textLines":1,"bbox":[886,196,318,34]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":3,"text":"老板看到的是汇总结果，看不到需求质量、阻塞依赖、资源瓶颈和责任链路。","textPreview":"老板看到的是汇总结果，看不到需求质量、阻塞依赖、资源瓶颈和责任链路。","textChars":34,"textLines":1,"bbox":[886,242,318,96]}
+{"kind":"shape","id":"sh/c3ylc7u5","slide":3,"bbox":[58,400,360,160]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":3,"bbox":[58,400,8,160]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":3,"text":"复盘不沉淀","textPreview":"复盘不沉淀","textChars":5,"textLines":1,"bbox":[82,422,318,34]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":3,"text":"项目结束后经验留在个人脑子里，下一次仍然重复同样的错误。","textPreview":"项目结束后经验留在个人脑子里，下一次仍然重复同样的错误。","textChars":28,"textLines":1,"bbox":[82,468,318,76]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":3,"bbox":[460,400,360,160]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":3,"bbox":[460,400,8,160]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":3,"text":"工具割裂","textPreview":"工具割裂","textChars":4,"textLines":1,"bbox":[484,422,318,34]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":3,"text":"飞书、Jira、禅道、Git、客服和知识库各管一段，缺少统一判断层。","textPreview":"飞书、Jira、禅道、Git、客服和知识库各管一段，缺少统一判断层。","textChars":34,"textLines":1,"bbox":[484,468,318,76]}
+{"kind":"shape","id":"sh/nuxc3ylc","slide":3,"bbox":[862,400,360,160]}
+{"kind":"shape","id":"sh/y90je9cv","slide":3,"bbox":[862,400,8,160]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":3,"text":"AI难落地","textPreview":"AI难落地","textChars":5,"textLines":1,"bbox":[886,422,318,34]}
+{"kind":"textbox","id":"sh/cbulwval","slide":3,"text":"通用大模型能生成文本，但缺少权限、证据、流程和责任边界。","textPreview":"通用大模型能生成文本，但缺少权限、证据、流程和责任边界。","textChars":28,"textLines":1,"bbox":[886,468,318,76]}
+{"kind":"notes","id":"nt/j2ahfu","slide":3,"text":""}
+{"kind":"slide","id":"sl/y5iad1","slide":4,"title":"INVESTOR DECK","textShapes":11}
+{"kind":"textbox","id":"sh/byhgn29g","slide":4,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":4,"text":"市场窗口：AI让协作软件重新定义价值边界","textPreview":"市场窗口：AI让协作软件重新定义价值边界","textChars":20,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/t47y1kre","slide":4,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":4,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":4,"text":"外部验证","textPreview":"外部验证","textChars":4,"textLines":1,"bbox":[52,160,220,34]}
+{"kind":"shape","id":"sh/tcj6tova","slide":4,"bbox":[62,228,12,12]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":4,"text":"CNNIC数据显示，截至2023年12月，中国网民规模达10.92亿，互联网普及率77.5%。","textPreview":"CNNIC数据显示，截至2023年12月，中国网民规模达10.92亿，互联网普及率77.5%。","textChars":47,"textLines":1,"bbox":[90,220,732,70]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":4,"bbox":[62,302,12,12]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":4,"text":"Asana FY2025收入达7.239亿美元，超过16.9万客户使用其企业工作管理平台。","textPreview":"Asana FY2025收入达7.239亿美元，超过16.9万客户使用其企业工作管理平台。","textChars":45,"textLines":1,"bbox":[90,294,732,70]}
+{"kind":"shape","id":"sh/yd0z6103","slide":4,"bbox":[62,376,12,12]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":4,"text":"Asana明确提出AI将扩大工作管理平台的可服务工作流，验证“人机协同编排层”的方向。","textPreview":"Asana明确提出AI将扩大工作管理平台的可服务工作流，验证“人机协同编排层”的方向。","textChars":43,"textLines":1,"bbox":[90,368,732,70]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":4,"bbox":[902,156,296,390]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":4,"text":"为什么现在做","textPreview":"为什么现在做","textChars":6,"textLines":1,"bbox":[936,190,230,40]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":4,"text":"企业已有数字化工具\n但过程数据未被治理\n\nAI能力成熟\n但需要场景、权限和评测\n\n传统PMO成本高\n适合被Agent增强","textPreview":"企业已有数字化工具 | 但过程数据未被治理 |  | AI能力成熟 | 但需要场景、权限和评测 |  | 传统PMO成本高 | 适合被Agent增强","textChars":60,"textLines":8,"bbox":[932,258,240,220]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":4,"text":"Sources: CNNIC 第53次报告；Asana FY2025 Results","textPreview":"Sources: CNNIC 第53次报告；Asana FY2025 Results","textChars":42,"textLines":1,"bbox":[58,620,780,22]}
+{"kind":"notes","id":"nt/y5iad1","slide":4,"text":""}
+{"kind":"slide","id":"sl/nxmbpg","slide":5,"title":"INVESTOR DECK","textShapes":14}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":5,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":5,"text":"首批客户应聚焦“有复杂项目、有预算、有数据基础”的组织","textPreview":"首批客户应聚焦“有复杂项目、有预算、有数据基础”的组织","textChars":27,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/0fepkzup","slide":5,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":5,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/tovahoza","slide":5,"bbox":[58,172,245,230]}
+{"kind":"shape","id":"sh/032lszqt","slide":5,"bbox":[58,172,8,230]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":5,"text":"软件/AI创业公司","textPreview":"软件/AI创业公司","textChars":9,"textLines":1,"bbox":[82,194,203,34]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":5,"text":"20–300人；需求变化快、项目风险高、研发和产品协作压力大。","textPreview":"20–300人；需求变化快、项目风险高、研发和产品协作压力大。","textChars":31,"textLines":1,"bbox":[82,240,203,146]}
+{"kind":"shape","id":"sh/ovahoza1","slide":5,"bbox":[353,172,245,230]}
+{"kind":"shape","id":"sh/dg7adsji","slide":5,"bbox":[353,172,8,230]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":5,"text":"制造/传统企业数字化团队","textPreview":"制造/传统企业数字化团队","textChars":12,"textLines":1,"bbox":[377,194,203,34]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":5,"text":"50–1000人；跨部门项目多、供应商协同难、过程难追溯。","textPreview":"50–1000人；跨部门项目多、供应商协同难、过程难追溯。","textChars":29,"textLines":1,"bbox":[377,240,203,146]}
+{"kind":"shape","id":"sh/onyd0z61","slide":5,"bbox":[648,172,245,230]}
+{"kind":"shape","id":"sh/d8v6psfi","slide":5,"bbox":[648,172,8,230]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":5,"text":"咨询/交付型机构","textPreview":"咨询/交付型机构","textChars":8,"textLines":1,"bbox":[672,194,203,34]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":5,"text":"10–200人；顾问交付依赖个人经验，报告生产和复盘成本高。","textPreview":"10–200人；顾问交付依赖个人经验，报告生产和复盘成本高。","textChars":30,"textLines":1,"bbox":[672,240,203,146]}
+{"kind":"shape","id":"sh/oj2t83it","slide":5,"bbox":[943,172,245,230]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":5,"bbox":[943,172,8,230]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":5,"text":"运营/内容团队","textPreview":"运营/内容团队","textChars":7,"textLines":1,"bbox":[967,194,203,34]}
+{"kind":"textbox","id":"sh/obm58z25","slide":5,"text":"5–100人；活动、素材、任务和复盘分散，推进靠人催。","textPreview":"5–100人；活动、素材、任务和复盘分散，推进靠人催。","textChars":27,"textLines":1,"bbox":[967,240,203,146]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":5,"bbox":[58,462,1122,90]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":5,"text":"最佳早期ICP","textPreview":"最佳早期ICP","textChars":7,"textLines":1,"bbox":[84,486,180,28]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":5,"text":"正在使用飞书/表格/Jira/禅道等工具，但管理者仍无法稳定看到需求质量、交付风险、阻塞原因和改进闭环的企业团队。","textPreview":"正在使用飞书/表格/Jira/禅道等工具，但管理者仍无法稳定看到需求质量、交付风险、阻塞原因和改进闭环的企业团队。","textChars":57,"textLines":1,"bbox":[280,480,820,46]}
+{"kind":"notes","id":"nt/nxmbpg","slide":5,"text":""}
+{"kind":"slide","id":"sl/wzfuo5","slide":6,"title":"INVESTOR DECK","textShapes":17}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":6,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":6,"text":"元序AI提供客户现有工具之上的AI治理层","textPreview":"元序AI提供客户现有工具之上的AI治理层","textChars":20,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/0fepkzup","slide":6,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":6,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/tovahoza","slide":6,"bbox":[58,178,255,160]}
+{"kind":"shape","id":"sh/032lszqt","slide":6,"bbox":[58,178,8,160]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":6,"text":"数据连接","textPreview":"数据连接","textChars":4,"textLines":1,"bbox":[82,200,213,34]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":6,"text":"飞书、表格、Jira、禅道、Git、文档、知识库和历史项目。","textPreview":"飞书、表格、Jira、禅道、Git、文档、知识库和历史项目。","textChars":30,"textLines":1,"bbox":[82,246,213,76]}
+{"kind":"shape","id":"sh/ovahoza1","slide":6,"bbox":[350,178,255,160]}
+{"kind":"shape","id":"sh/dg7adsji","slide":6,"bbox":[350,178,8,160]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":6,"text":"统一模型","textPreview":"统一模型","textChars":4,"textLines":1,"bbox":[374,200,213,34]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":6,"text":"把需求、任务、缺陷、风险、成员、文档和产出映射为统一任务模型。","textPreview":"把需求、任务、缺陷、风险、成员、文档和产出映射为统一任务模型。","textChars":31,"textLines":1,"bbox":[374,246,213,76]}
+{"kind":"shape","id":"sh/onyd0z61","slide":6,"bbox":[642,178,255,160]}
+{"kind":"shape","id":"sh/d8v6psfi","slide":6,"bbox":[642,178,8,160]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":6,"text":"Agent协同","textPreview":"Agent协同","textChars":7,"textLines":1,"bbox":[666,200,213,34]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":6,"text":"需求分析、风险识别、质量检查、效能分析、报告生成等Agent共同工作。","textPreview":"需求分析、风险识别、质量检查、效能分析、报告生成等Agent共同工作。","textChars":35,"textLines":1,"bbox":[666,246,213,76]}
+{"kind":"shape","id":"sh/oj2t83it","slide":6,"bbox":[934,178,255,160]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":6,"bbox":[934,178,8,160]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":6,"text":"治理闭环","textPreview":"治理闭环","textChars":4,"textLines":1,"bbox":[958,200,213,34]}
+{"kind":"textbox","id":"sh/obm58z25","slide":6,"text":"诊断报告、看板、建议、审批回写、通知和复盘沉淀。","textPreview":"诊断报告、看板、建议、审批回写、通知和复盘沉淀。","textChars":24,"textLines":1,"bbox":[958,246,213,76]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":6,"bbox":[182,396,900,2]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":6,"text":"连接客户已有工具","textPreview":"连接客户已有工具","textChars":8,"textLines":1,"bbox":[76,426,240,40]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":6,"text":"形成可解释判断","textPreview":"形成可解释判断","textChars":7,"textLines":1,"bbox":[396,426,260,40]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":6,"text":"输出管理行动","textPreview":"输出管理行动","textChars":6,"textLines":1,"bbox":[740,426,250,40]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":6,"text":"沉淀组织资产","textPreview":"沉淀组织资产","textChars":6,"textLines":1,"bbox":[1030,426,220,40]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":6,"text":"产品原则：默认只读、证据可追溯、人工审批回写、规则与模型双引擎。","textPreview":"产品原则：默认只读、证据可追溯、人工审批回写、规则与模型双引擎。","textChars":32,"textLines":1,"bbox":[58,552,990,38]}
+{"kind":"notes","id":"nt/wzfuo5","slide":6,"text":""}
+{"kind":"slide","id":"sl/dsu0e9","slide":7,"title":"INVESTOR DECK","textShapes":13}
+{"kind":"textbox","id":"sh/obm58z25","slide":7,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":7,"text":"产品由四个核心模块构成，先服务高价值场景","textPreview":"产品由四个核心模块构成，先服务高价值场景","textChars":20,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/65wjudg7","slide":7,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":7,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":7,"bbox":[58,176,530,135]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":7,"bbox":[58,176,8,135]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":7,"text":"AI协同工作台","textPreview":"AI协同工作台","textChars":7,"textLines":1,"bbox":[82,198,488,34]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":7,"text":"目标、任务、风险、进度、产出和复盘集中管理。","textPreview":"目标、任务、风险、进度、产出和复盘集中管理。","textChars":22,"textLines":1,"bbox":[82,244,488,51]}
+{"kind":"shape","id":"sh/yxobm58z","slide":7,"bbox":[650,176,530,135]}
+{"kind":"shape","id":"sh/nih4byhg","slide":7,"bbox":[650,176,8,135]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":7,"text":"Agent协同中心","textPreview":"Agent协同中心","textChars":9,"textLines":1,"bbox":[674,198,488,34]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":7,"text":"按任务调用需求分析、风险识别、质量检查、知识检索和报告Agent。","textPreview":"按任务调用需求分析、风险识别、质量检查、知识检索和报告Agent。","textChars":33,"textLines":1,"bbox":[674,244,488,51]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":7,"bbox":[58,350,530,135]}
+{"kind":"shape","id":"sh/r65wjudg","slide":7,"bbox":[58,350,8,135]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":7,"text":"知识与数据底座","textPreview":"知识与数据底座","textChars":7,"textLines":1,"bbox":[82,372,488,34]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":7,"text":"接入业务系统、文档和历史案例，形成可检索、可追溯上下文。","textPreview":"接入业务系统、文档和历史案例，形成可检索、可追溯上下文。","textChars":28,"textLines":1,"bbox":[82,418,488,51]}
+{"kind":"shape","id":"sh/yd0z6103","slide":7,"bbox":[650,350,530,135]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":7,"bbox":[650,350,8,135]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":7,"text":"报告与治理闭环","textPreview":"报告与治理闭环","textChars":7,"textLines":1,"bbox":[674,372,488,34]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":7,"text":"输出诊断报告、改进计划、周报、看板和复盘材料。","textPreview":"输出诊断报告、改进计划、周报、看板和复盘材料。","textChars":23,"textLines":1,"bbox":[674,418,488,51]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":7,"text":"首个标杆场景：研发交付治理；后续扩展到运营增长、咨询交付、内容生产、客户成功。","textPreview":"首个标杆场景：研发交付治理；后续扩展到运营增长、咨询交付、内容生产、客户成功。","textChars":39,"textLines":1,"bbox":[58,560,980,44]}
+{"kind":"notes","id":"nt/dsu0e9","slide":7,"text":""}
+{"kind":"slide","id":"sl/xmhxsz","slide":8,"title":"INVESTOR DECK","textShapes":11}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":8,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":8,"text":"从研发交付切入，是为了拿到最明确的ROI","textPreview":"从研发交付切入，是为了拿到最明确的ROI","textChars":20,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/yd0z6103","slide":8,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":8,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":8,"text":"切入场景","textPreview":"切入场景","textChars":4,"textLines":1,"bbox":[58,166,220,36]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":8,"bbox":[72,238,12,12]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":8,"text":"客户已有需求、任务、缺陷、迭代和交付数据，容易做只读诊断。","textPreview":"客户已有需求、任务、缺陷、迭代和交付数据，容易做只读诊断。","textChars":29,"textLines":1,"bbox":[100,230,602,68]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":8,"bbox":[72,310,12,12]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":8,"text":"延期、返工、缺陷、需求变更都可以转化为可量化指标。","textPreview":"延期、返工、缺陷、需求变更都可以转化为可量化指标。","textChars":25,"textLines":1,"bbox":[100,302,602,68]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":8,"bbox":[72,382,12,12]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":8,"text":"购买人通常是CEO、CTO、PMO、产品/研发负责人，预算路径清晰。","textPreview":"购买人通常是CEO、CTO、PMO、产品/研发负责人，预算路径清晰。","textChars":34,"textLines":1,"bbox":[100,374,602,68]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":8,"bbox":[780,160,360,360]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":8,"text":"诊断闭环","textPreview":"诊断闭环","textChars":4,"textLines":1,"bbox":[840,190,240,40]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":8,"text":"需求质量\n↓\n项目风险\n↓\n交付透明度\n↓\n改进计划\n↓\n复盘沉淀","textPreview":"需求质量 | ↓ | 项目风险 | ↓ | 交付透明度 | ↓ | 改进计划 | ↓ | 复盘沉淀","textChars":33,"textLines":9,"bbox":[860,254,200,240]}
+{"kind":"textbox","id":"sh/83itgfml","slide":8,"text":"不把公司定位锁死在研发，而是用研发交付做第一块可验证样板。","textPreview":"不把公司定位锁死在研发，而是用研发交付做第一块可验证样板。","textChars":29,"textLines":1,"bbox":[58,570,980,36]}
+{"kind":"notes","id":"nt/xmhxsz","slide":8,"text":""}
+{"kind":"slide","id":"sl/da3hii","slide":9,"title":"INVESTOR DECK","textShapes":14}
+{"kind":"textbox","id":"sh/orytsvu9","slide":9,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/z61032ls","slide":9,"text":"商业模式：服务验证价值，平台复制交付","textPreview":"商业模式：服务验证价值，平台复制交付","textChars":18,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/al87ed8b","slide":9,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":9,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":9,"bbox":[58,176,270,170]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":9,"bbox":[58,176,8,170]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":9,"text":"诊断服务","textPreview":"诊断服务","textChars":4,"textLines":1,"bbox":[82,198,228,34]}
+{"kind":"textbox","id":"sh/obm58z25","slide":9,"text":"1–5万元/次；交付项目健康诊断、问题清单和改进路线。","textPreview":"1–5万元/次；交付项目健康诊断、问题清单和改进路线。","textChars":27,"textLines":1,"bbox":[82,244,228,86]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":9,"bbox":[360,176,270,170]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":9,"bbox":[360,176,8,170]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":9,"text":"实施交付","textPreview":"实施交付","textChars":4,"textLines":1,"bbox":[384,198,228,34]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":9,"text":"5–30万元/项目；配置流程、字段、知识库、看板和Agent。","textPreview":"5–30万元/项目；配置流程、字段、知识库、看板和Agent。","textChars":31,"textLines":1,"bbox":[384,244,228,86]}
+{"kind":"shape","id":"sh/epkzupwb","slide":9,"bbox":[662,176,270,170]}
+{"kind":"shape","id":"sh/7adsji5s","slide":9,"bbox":[662,176,8,170]}
+{"kind":"textbox","id":"sh/wval87ed","slide":9,"text":"平台订阅","textPreview":"平台订阅","textChars":4,"textLines":1,"bbox":[686,198,228,34]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":9,"text":"3–20万元/年；按空间、账号、连接器和Agent任务量收费。","textPreview":"3–20万元/年；按空间、账号、连接器和Agent任务量收费。","textChars":31,"textLines":1,"bbox":[686,244,228,86]}
+{"kind":"shape","id":"sh/eloj2t83","slide":9,"bbox":[964,176,270,170]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":9,"bbox":[964,176,8,170]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":9,"text":"专属云/私有化","textPreview":"专属云/私有化","textChars":7,"textLines":1,"bbox":[988,198,228,34]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":9,"text":"20–100万元+/年；满足高安全、隔离和SLA客户。","textPreview":"20–100万元+/年；满足高安全、隔离和SLA客户。","textChars":27,"textLines":1,"bbox":[988,244,228,86]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":9,"bbox":[58,420,1122,92]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":9,"text":"关键","textPreview":"关键","textChars":2,"textLines":1,"bbox":[86,448,80,26]}
+{"kind":"textbox","id":"sh/z61032ls","slide":9,"text":"早期不做低价工具账号竞争；定价锚点应放在项目延期、返工、管理人力和客户满意度改善上。","textPreview":"早期不做低价工具账号竞争；定价锚点应放在项目延期、返工、管理人力和客户满意度改善上。","textChars":42,"textLines":1,"bbox":[178,440,930,42]}
+{"kind":"notes","id":"nt/da3hii","slide":9,"text":""}
+{"kind":"slide","id":"sl/sqnl91","slide":10,"title":"INVESTOR DECK","textShapes":14}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":10,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":10,"text":"市场规模用三层口径说明，比单一宏观数字更可信","textPreview":"市场规模用三层口径说明，比单一宏观数字更可信","textChars":22,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/8z25kb6x","slide":10,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":10,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":10,"text":"TAM","textPreview":"TAM","textChars":3,"textLines":1,"bbox":[64,170,120,40]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":10,"text":"所有存在复杂协作的企业团队、机构和专业个人，属于企业协作软件、AI应用和管理咨询的交叉市场。","textPreview":"所有存在复杂协作的企业团队、机构和专业个人，属于企业协作软件、AI应用和管理咨询的交叉市场。","textChars":46,"textLines":1,"bbox":[196,170,900,54]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":10,"text":"SAM","textPreview":"SAM","textChars":3,"textLines":1,"bbox":[64,278,120,40]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":10,"text":"软件研发、数字化项目、咨询交付、内容运营等项目型组织，是最先具备数据基础和付费动机的可服务市场。","textPreview":"软件研发、数字化项目、咨询交付、内容运营等项目型组织，是最先具备数据基础和付费动机的可服务市场。","textChars":48,"textLines":1,"bbox":[196,278,900,54]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":10,"text":"SOM","textPreview":"SOM","textChars":3,"textLines":1,"bbox":[64,386,120,40]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":10,"text":"前1–2年目标20–50家企业客户；按年化10–30万元/客户，形成约200万–1500万元收入区间。","textPreview":"前1–2年目标20–50家企业客户；按年化10–30万元/客户，形成约200万–1500万元收入区间。","textChars":51,"textLines":1,"bbox":[196,386,900,54]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":10,"text":"Year 1","textPreview":"Year 1","textChars":6,"textLines":1,"bbox":[174,538,220,28]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":10,"bbox":[404,546,720,12]}
+{"kind":"shape","id":"sh/orytsvu9","slide":10,"bbox":[404,546,158,12]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":10,"text":"Year 2","textPreview":"Year 2","textChars":6,"textLines":1,"bbox":[174,582,220,28]}
+{"kind":"shape","id":"sh/al87ed8b","slide":10,"bbox":[404,590,720,12]}
+{"kind":"shape","id":"sh/z61032ls","slide":10,"bbox":[404,590,396,12]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":10,"text":"Year 3","textPreview":"Year 3","textChars":6,"textLines":1,"bbox":[174,626,220,28]}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":10,"bbox":[404,634,720,12]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":10,"bbox":[404,634,634,12]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":10,"text":"示意：客户数与ARR增长，不代表承诺预测","textPreview":"示意：客户数与ARR增长，不代表承诺预测","textChars":20,"textLines":1,"bbox":[934,625,240,22]}
+{"kind":"notes","id":"nt/sqnl91","slide":10,"text":""}
+{"kind":"slide","id":"sl/y6hw8f","slide":11,"title":"INVESTOR DECK","textShapes":23}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":11,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":11,"text":"竞争策略：不替换工具，做上层诊断和治理","textPreview":"竞争策略：不替换工具，做上层诊断和治理","textChars":19,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/cvixczed","slide":11,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":11,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/54zidony","slide":11,"bbox":[58,160,1122,46]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":11,"text":"替代方案","textPreview":"替代方案","textChars":4,"textLines":1,"bbox":[78,170,240,24]}
+{"kind":"textbox","id":"sh/judg7ads","slide":11,"text":"客户现在怎么做","textPreview":"客户现在怎么做","textChars":7,"textLines":1,"bbox":[360,170,300,24]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":11,"text":"不足","textPreview":"不足","textChars":2,"textLines":1,"bbox":[760,170,360,24]}
+{"kind":"shape","id":"sh/47y1kre1","slide":11,"bbox":[58,206,1122,68]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":11,"text":"飞书/钉钉/企微","textPreview":"飞书/钉钉/企微","textChars":8,"textLines":1,"bbox":[78,224,230,28]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":11,"text":"协同、审批、文档、消息","textPreview":"协同、审批、文档、消息","textChars":11,"textLines":1,"bbox":[360,222,320,32]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":11,"text":"不直接给项目治理判断","textPreview":"不直接给项目治理判断","textChars":10,"textLines":1,"bbox":[760,222,360,32]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":11,"bbox":[58,278,1122,68]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":11,"text":"Jira/禅道/TAPD","textPreview":"Jira/禅道/TAPD","textChars":12,"textLines":1,"bbox":[78,296,230,28]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":11,"text":"需求、任务、缺陷、迭代","textPreview":"需求、任务、缺陷、迭代","textChars":11,"textLines":1,"bbox":[360,294,320,32]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":11,"text":"记录强，复盘和跨项目洞察弱","textPreview":"记录强，复盘和跨项目洞察弱","textChars":13,"textLines":1,"bbox":[760,294,360,32]}
+{"kind":"shape","id":"sh/4nap4r65","slide":11,"bbox":[58,350,1122,68]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":11,"text":"BI/数据看板","textPreview":"BI/数据看板","textChars":7,"textLines":1,"bbox":[78,368,230,28]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":11,"text":"指标展示和趋势分析","textPreview":"指标展示和趋势分析","textChars":9,"textLines":1,"bbox":[360,366,320,32]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":11,"text":"能看结果，难解释原因和行动","textPreview":"能看结果，难解释原因和行动","textChars":13,"textLines":1,"bbox":[760,366,360,32]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":11,"bbox":[58,422,1122,68]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":11,"text":"管理咨询/PMO","textPreview":"管理咨询/PMO","textChars":8,"textLines":1,"bbox":[78,440,230,28]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":11,"text":"人工诊断、制度建设、项目跟踪","textPreview":"人工诊断、制度建设、项目跟踪","textChars":14,"textLines":1,"bbox":[360,438,320,32]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":11,"text":"成本高，依赖个人经验","textPreview":"成本高，依赖个人经验","textChars":10,"textLines":1,"bbox":[760,438,360,32]}
+{"kind":"shape","id":"sh/je9cvixc","slide":11,"bbox":[58,494,1122,68]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":11,"text":"通用大模型","textPreview":"通用大模型","textChars":5,"textLines":1,"bbox":[78,512,230,28]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":11,"text":"问答、总结、报告生成","textPreview":"问答、总结、报告生成","textChars":10,"textLines":1,"bbox":[360,510,320,32]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":11,"text":"缺少权限、证据和流程闭环","textPreview":"缺少权限、证据和流程闭环","textChars":12,"textLines":1,"bbox":[760,510,360,32]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":11,"text":"元序AI的差异：连接现有工具，输出证据化诊断、Agent协同建议和持续治理闭环。","textPreview":"元序AI的差异：连接现有工具，输出证据化诊断、Agent协同建议和持续治理闭环。","textChars":40,"textLines":1,"bbox":[58,602,1000,32]}
+{"kind":"notes","id":"nt/y6hw8f","slide":11,"text":""}
+{"kind":"slide","id":"sl/p04tnt","slide":12,"title":"INVESTOR DECK","textShapes":16}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":12,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/judg7ads","slide":12,"text":"技术壁垒来自业务模型、证据链和可控Agent，而不是单纯调用大模型","textPreview":"技术壁垒来自业务模型、证据链和可控Agent，而不是单纯调用大模型","textChars":33,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/u9knih4b","slide":12,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":12,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":12,"bbox":[58,172,355,170]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":12,"bbox":[58,172,8,170]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":12,"text":"统一任务模型","textPreview":"统一任务模型","textChars":6,"textLines":1,"bbox":[82,194,313,34]}
+{"kind":"textbox","id":"sh/cvixczed","slide":12,"text":"沉淀目标、需求、任务、缺陷、风险、文档、人员、产出的关系图谱。","textPreview":"沉淀目标、需求、任务、缺陷、风险、文档、人员、产出的关系图谱。","textChars":31,"textLines":1,"bbox":[82,240,313,86]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":12,"bbox":[462,172,355,170]}
+{"kind":"shape","id":"sh/bm58z25k","slide":12,"bbox":[462,172,8,170]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":12,"text":"规则 + 模型双引擎","textPreview":"规则 + 模型双引擎","textChars":10,"textLines":1,"bbox":[486,194,313,34]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":12,"text":"CMMI/IPD/项目治理规则负责稳定判断，大模型负责理解、解释和建议。","textPreview":"CMMI/IPD/项目治理规则负责稳定判断，大模型负责理解、解释和建议。","textChars":36,"textLines":1,"bbox":[486,240,313,86]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":12,"bbox":[866,172,355,170]}
+{"kind":"shape","id":"sh/bat47y1k","slide":12,"bbox":[866,172,8,170]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":12,"text":"证据可追溯","textPreview":"证据可追溯","textChars":5,"textLines":1,"bbox":[890,194,313,34]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":12,"text":"每个结论关联来源系统、字段、更新时间、模型版本和判断依据。","textPreview":"每个结论关联来源系统、字段、更新时间、模型版本和判断依据。","textChars":29,"textLines":1,"bbox":[890,240,313,86]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":12,"bbox":[58,390,355,150]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":12,"bbox":[58,390,8,150]}
+{"kind":"textbox","id":"sh/7u54zido","slide":12,"text":"受控Agent体系","textPreview":"受控Agent体系","textChars":9,"textLines":1,"bbox":[82,412,313,34]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":12,"text":"Agent具备独立身份、权限范围、工具白名单、预算、超时和人工审批机制。","textPreview":"Agent具备独立身份、权限范围、工具白名单、预算、超时和人工审批机制。","textChars":36,"textLines":1,"bbox":[82,458,313,66]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":12,"bbox":[462,390,355,150]}
+{"kind":"shape","id":"sh/wfyxobm5","slide":12,"bbox":[462,390,8,150]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":12,"text":"可部署架构","textPreview":"可部署架构","textChars":5,"textLines":1,"bbox":[486,412,313,34]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":12,"text":"SaaS、专属云、私有化共用代码基线，适配不同安全要求。","textPreview":"SaaS、专属云、私有化共用代码基线，适配不同安全要求。","textChars":28,"textLines":1,"bbox":[486,458,313,66]}
+{"kind":"shape","id":"sh/lc7u54zi","slide":12,"bbox":[866,390,355,150]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":12,"bbox":[866,390,8,150]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":12,"text":"评测与复盘数据","textPreview":"评测与复盘数据","textChars":7,"textLines":1,"bbox":[890,412,313,34]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":12,"text":"用诊断结果、采纳率和历史项目反馈持续训练规则、模板和提示策略。","textPreview":"用诊断结果、采纳率和历史项目反馈持续训练规则、模板和提示策略。","textChars":31,"textLines":1,"bbox":[890,458,313,66]}
+{"kind":"notes","id":"nt/p04tnt","slide":12,"text":""}
+{"kind":"slide","id":"sl/ng6mcj","slide":13,"title":"INVESTOR DECK","textShapes":17}
+{"kind":"textbox","id":"sh/v6psfil0","slide":13,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/knih4byh","slide":13,"text":"落地路径：用标杆客户验证，再扩展场景模板","textPreview":"落地路径：用标杆客户验证，再扩展场景模板","textChars":20,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/d8bat47y","slide":13,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":13,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":13,"bbox":[58,188,250,330]}
+{"kind":"textbox","id":"sh/d0z61032","slide":13,"text":"0–3个月","textPreview":"0–3个月","textChars":5,"textLines":1,"bbox":[82,216,190,30]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":13,"text":"MVP与标杆试点","textPreview":"MVP与标杆试点","textChars":8,"textLines":1,"bbox":[82,268,190,70]}
+{"kind":"textbox","id":"sh/vixczed8","slide":13,"text":"飞书/表格导入、需求分析Agent、风险诊断报告","textPreview":"飞书/表格导入、需求分析Agent、风险诊断报告","textChars":24,"textLines":1,"bbox":[82,372,190,100]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":13,"bbox":[352,188,250,330]}
+{"kind":"textbox","id":"sh/61032lsz","slide":13,"text":"3–6个月","textPreview":"3–6个月","textChars":5,"textLines":1,"bbox":[376,216,190,30]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":13,"text":"企业闭环交付","textPreview":"企业闭环交付","textChars":6,"textLines":1,"bbox":[376,268,190,70]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":13,"text":"连接器、知识库、看板、周报/复盘、人工审批回写","textPreview":"连接器、知识库、看板、周报/复盘、人工审批回写","textChars":23,"textLines":1,"bbox":[376,372,190,100]}
+{"kind":"shape","id":"sh/vy90je9c","slide":13,"bbox":[646,188,250,330]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":13,"text":"6–12个月","textPreview":"6–12个月","textChars":6,"textLines":1,"bbox":[670,216,190,30]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":13,"text":"产品化销售","textPreview":"产品化销售","textChars":5,"textLines":1,"bbox":[670,268,190,70]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":13,"text":"标准套餐、专属云部署、行业模板、客户成功流程","textPreview":"标准套餐、专属云部署、行业模板、客户成功流程","textChars":22,"textLines":1,"bbox":[670,372,190,100]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":13,"bbox":[940,188,250,330]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":13,"text":"12个月+","textPreview":"12个月+","textChars":5,"textLines":1,"bbox":[964,216,190,30]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":13,"text":"规模化复制","textPreview":"规模化复制","textChars":5,"textLines":1,"bbox":[964,268,190,70]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":13,"text":"多场景Agent市场、生态连接器、私有化交付包","textPreview":"多场景Agent市场、生态连接器、私有化交付包","textChars":23,"textLines":1,"bbox":[964,372,190,100]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":13,"text":"第一阶段成功标准：客户愿意为诊断/实施付费，报告被管理层采纳，风险识别和周报复盘明显减少人工工作量。","textPreview":"第一阶段成功标准：客户愿意为诊断/实施付费，报告被管理层采纳，风险识别和周报复盘明显减少人工工作量。","textChars":50,"textLines":1,"bbox":[58,590,1100,36]}
+{"kind":"notes","id":"nt/ng6mcj","slide":13,"text":""}
+{"kind":"slide","id":"sl/ifaypk","slide":14,"title":"INVESTOR DECK","textShapes":14}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":14,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":14,"text":"团队定位：用项目治理经验驱动AI产品，而不是只做模型包装","textPreview":"团队定位：用项目治理经验驱动AI产品，而不是只做模型包装","textChars":28,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/czed8v6p","slide":14,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":14,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/u54zidon","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/5sneloj2","slide":14,"bbox":[58,166,500,360]}
+{"kind":"textbox","id":"sh/cbulwval","slide":14,"text":"北京润序数智科技有限公司","textPreview":"北京润序数智科技有限公司","textChars":12,"textLines":1,"bbox":[92,202,410,40]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":14,"text":"产品品牌：元序AI","textPreview":"产品品牌：元序AI","textChars":9,"textLines":1,"bbox":[92,264,280,32]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":14,"text":"团队能力基础","textPreview":"团队能力基础","textChars":6,"textLines":1,"bbox":[92,340,220,32]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":14,"text":"项目管理体系\nCMMI / IPD\n需求质量评估\nAI Agent产品设计\n企业交付与诊断","textPreview":"项目管理体系 | CMMI / IPD | 需求质量评估 | AI Agent产品设计 | 企业交付与诊断","textChars":45,"textLines":5,"bbox":[92,392,340,110]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":14,"text":"需要补齐的关键角色","textPreview":"需要补齐的关键角色","textChars":9,"textLines":1,"bbox":[642,166,420,34]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":14,"bbox":[654,236,12,12]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":14,"text":"标杆客户销售：拿下首批20–50家企业客户。","textPreview":"标杆客户销售：拿下首批20–50家企业客户。","textChars":22,"textLines":1,"bbox":[682,228,492,56]}
+{"kind":"shape","id":"sh/obm58z25","slide":14,"bbox":[654,296,12,12]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":14,"text":"行业解决方案：把交付经验沉淀成可复制模板。","textPreview":"行业解决方案：把交付经验沉淀成可复制模板。","textChars":21,"textLines":1,"bbox":[682,288,492,56]}
+{"kind":"shape","id":"sh/65wjudg7","slide":14,"bbox":[654,356,12,12]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":14,"text":"连接器与数据工程：降低客户接入成本。","textPreview":"连接器与数据工程：降低客户接入成本。","textChars":18,"textLines":1,"bbox":[682,348,492,56]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":14,"bbox":[654,416,12,12]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":14,"text":"模型评测与安全治理：保证Agent输出可信可控。","textPreview":"模型评测与安全治理：保证Agent输出可信可控。","textChars":24,"textLines":1,"bbox":[682,408,492,56]}
+{"kind":"shape","id":"sh/54zidony","slide":14,"bbox":[654,476,12,12]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":14,"text":"客户成功：持续证明ROI并推动续费。","textPreview":"客户成功：持续证明ROI并推动续费。","textChars":18,"textLines":1,"bbox":[682,468,492,56]}
+{"kind":"notes","id":"nt/ifaypk","slide":14,"text":""}
+{"kind":"slide","id":"sl/yqx7n1","slide":15,"title":"INVESTOR DECK","textShapes":14}
+{"kind":"textbox","id":"sh/4r65wjud","slide":15,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":15,"text":"融资计划：先验证可复制的企业付费闭环","textPreview":"融资计划：先验证可复制的企业付费闭环","textChars":18,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/mlkjm1cf","slide":15,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":15,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":15,"text":"拟融资","textPreview":"拟融资","textChars":3,"textLines":1,"bbox":[58,178,160,34]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":15,"text":"300–500万元人民币","textPreview":"300–500万元人民币","textChars":12,"textLines":1,"bbox":[58,222,520,64]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":15,"text":"金额为当前BP建议口径，可按实际融资计划调整。","textPreview":"金额为当前BP建议口径，可按实际融资计划调整。","textChars":23,"textLines":1,"bbox":[62,300,520,26]}
+{"kind":"textbox","id":"sh/83itgfml","slide":15,"text":"资金用途","textPreview":"资金用途","textChars":4,"textLines":1,"bbox":[650,178,220,34]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":15,"text":"产品研发","textPreview":"产品研发","textChars":4,"textLines":1,"bbox":[650,236,220,28]}
+{"kind":"shape","id":"sh/nuxc3ylc","slide":15,"bbox":[880,244,360,12]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":15,"bbox":[880,244,144,12]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":15,"text":"客户试点","textPreview":"客户试点","textChars":4,"textLines":1,"bbox":[650,288,220,28]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":15,"bbox":[880,296,360,12]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":15,"bbox":[880,296,90,12]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":15,"text":"销售市场","textPreview":"销售市场","textChars":4,"textLines":1,"bbox":[650,340,220,28]}
+{"kind":"shape","id":"sh/58z25kb6","slide":15,"bbox":[880,348,360,12]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":15,"bbox":[880,348,72,12]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":15,"text":"运维合规","textPreview":"运维合规","textChars":4,"textLines":1,"bbox":[650,392,220,28]}
+{"kind":"shape","id":"sh/fepkzupw","slide":15,"bbox":[880,400,360,12]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":15,"bbox":[880,400,54,12]}
+{"kind":"shape","id":"sh/xkf6dcbu","slide":15,"bbox":[58,450,1122,92]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":15,"text":"融资后12个月目标","textPreview":"融资后12个月目标","textChars":9,"textLines":1,"bbox":[86,478,220,28]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":15,"text":"完成MVP、交付3–5个标杆客户、沉淀2–3个标准场景模板，形成可复制的诊断 + 平台订阅销售路径。","textPreview":"完成MVP、交付3–5个标杆客户、沉淀2–3个标准场景模板，形成可复制的诊断 + 平台订阅销售路径。","textChars":50,"textLines":1,"bbox":[310,470,800,44]}
+{"kind":"notes","id":"nt/yqx7n1","slide":15,"text":""}
+{"kind":"slide","id":"sl/mach4w","slide":16,"title":"INVESTOR DECK","textShapes":12}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":16,"text":"INVESTOR DECK","textPreview":"INVESTOR DECK","textChars":13,"textLines":1,"bbox":[42,34,360,26]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":16,"text":"投资人应关注的下一步验证问题","textPreview":"投资人应关注的下一步验证问题","textChars":14,"textLines":1,"bbox":[42,70,1080,70]}
+{"kind":"shape","id":"sh/czed8v6p","slide":16,"bbox":[42,664,1196,1]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":16,"text":"北京润序数智科技有限公司 · 元序AI","textPreview":"北京润序数智科技有限公司 · 元序AI","textChars":19,"textLines":1,"bbox":[42,676,450,24]}
+{"kind":"textbox","id":"sh/u54zidon","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1190,676,48,24]}
+{"kind":"shape","id":"sh/5sneloj2","slide":16,"bbox":[58,176,360,180]}
+{"kind":"shape","id":"sh/cbulwval","slide":16,"bbox":[58,176,8,180]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":16,"text":"客户是否愿意付费","textPreview":"客户是否愿意付费","textChars":8,"textLines":1,"bbox":[82,198,318,34]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":16,"text":"用3–5个标杆客户验证诊断服务、实施交付和年度订阅的真实付款意愿。","textPreview":"用3–5个标杆客户验证诊断服务、实施交付和年度订阅的真实付款意愿。","textChars":33,"textLines":1,"bbox":[82,244,318,96]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":16,"bbox":[460,176,360,180]}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":16,"bbox":[460,176,8,180]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":16,"text":"ROI是否可量化","textPreview":"ROI是否可量化","textChars":8,"textLines":1,"bbox":[484,198,318,34]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":16,"text":"用需求质量、风险提前识别、周报时间、返工率和项目复盘采纳率证明价值。","textPreview":"用需求质量、风险提前识别、周报时间、返工率和项目复盘采纳率证明价值。","textChars":34,"textLines":1,"bbox":[484,244,318,96]}
+{"kind":"shape","id":"sh/obm58z25","slide":16,"bbox":[862,176,360,180]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":16,"bbox":[862,176,8,180]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":16,"text":"交付能否标准化","textPreview":"交付能否标准化","textChars":7,"textLines":1,"bbox":[886,198,318,34]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":16,"text":"每个项目必须沉淀字段映射、规则、模板、Agent流程和案例库，降低后续边际成本。","textPreview":"每个项目必须沉淀字段映射、规则、模板、Agent流程和案例库，降低后续边际成本。","textChars":40,"textLines":1,"bbox":[886,244,318,96]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":16,"text":"如果这三个问题被验证，元序AI就不是一次性咨询项目，而是可以从服务型收入走向平台型收入。","textPreview":"如果这三个问题被验证，元序AI就不是一次性咨询项目，而是可以从服务型收入走向平台型收入。","textChars":44,"textLines":1,"bbox":[58,456,1040,78]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":16,"text":"附注：本BP中的市场与融资测算用于早期沟通，需结合真实试点数据持续修正。","textPreview":"附注：本BP中的市场与融资测算用于早期沟通，需结合真实试点数据持续修正。","textChars":36,"textLines":1,"bbox":[58,610,920,24]}
+{"kind":"notes","id":"nt/mach4w","slide":16,"text":""}
