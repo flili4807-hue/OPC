@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>北京润序数智科技有限公司｜交付治理与过程改进</title>
+  <meta name="description" content="北京润序数智科技有限公司，面向研发交付、项目治理与过程改进的数智化服务商。" />
+  <style>
+    :root {
+      --bg: #07111f;
+      --panel: #0d1b2d;
+      --panel-2: #102338;
+      --ink: #eef6ff;
+      --muted: #a9b8cb;
+      --line: rgba(255,255,255,.13);
+      --blue: #4b8dff;
+      --cyan: #33d6c6;
+      --green: #62d58a;
+      --amber: #f0b34e;
+      --red: #f06c6c;
+      --paper: #f5f8fc;
+      --dark-text: #172235;
+      --soft-text: #66758a;
+      --shell: min(1180px, calc(100vw - 36px));
+      --shadow: 0 24px 70px rgba(0,0,0,.24);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    .shell { width: var(--shell); margin-inline: auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(7,17,31,.88);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 8px;
+      background: linear-gradient(135deg, #2558ff, #1ed1be);
+      box-shadow: 0 12px 32px rgba(51,214,198,.2);
+    }
+    .brand-mark::after { content: "润"; font-size: 13px; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-cta {
+      color: #06101c;
+      background: var(--cyan);
+      padding: 8px 13px;
+      border-radius: 6px;
+      font-weight: 750;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 96px 0 82px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255,255,255,.04) 1px, transparent 1px),
+        radial-gradient(circle at 76% 18%, rgba(51,214,198,.22), transparent 32%),
+        linear-gradient(135deg, #07111f 0%, #102139 58%, #07111f 100%);
+      background-size: 46px 46px, 46px 46px, auto, auto;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 54px;
+      align-items: center;
+    }
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .hero p {
+      max-width: 720px;
+      margin: 24px 0 0;
+      color: #c7d5e7;
+      font-size: 18px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 15px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--ink);
+      background: rgba(255,255,255,.06);
+    }
+    .btn.primary {
+      color: #06101c;
+      border-color: transparent;
+      background: var(--cyan);
+      font-weight: 800;
+    }
+    .hero-board {
+      border: 1px solid var(--line);
+      background: rgba(13,27,45,.76);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      border-radius: 8px;
+    }
+    .board-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .board-title { font-weight: 850; }
+    .status-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 750;
+    }
+    .status-dot::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: var(--green);
+      border-radius: 99px;
+      box-shadow: 0 0 16px var(--green);
+    }
+    .signal-list {
+      display: grid;
+      gap: 13px;
+      margin-top: 18px;
+    }
+    .signal {
+      display: grid;
+      grid-template-columns: 1fr 88px;
+      gap: 12px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .track {
+      height: 9px;
+      overflow: hidden;
+      background: rgba(255,255,255,.08);
+      border-radius: 99px;
+    }
+    .track i {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      border-radius: inherit;
+    }
+
+    .section {
+      padding: 78px 0;
+      background: var(--paper);
+      color: var(--dark-text);
+    }
+    .section.dark {
+      color: var(--ink);
+      background: #091423;
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+    .kicker {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .kicker::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      background: currentColor;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.18;
+    }
+    .section-head p {
+      margin: 0;
+      color: var(--soft-text);
+    }
+    .dark .section-head p { color: var(--muted); }
+    .dark .kicker { color: var(--cyan); }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .tile {
+      padding: 22px;
+      border: 1px solid #dce4ef;
+      background: #fff;
+      border-radius: 8px;
+      min-height: 210px;
+    }
+    .tile.dark-tile {
+      color: var(--ink);
+      background: var(--panel);
+      border-color: var(--line);
+    }
+    .tile h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+    .tile p {
+      margin: 0;
+      color: var(--soft-text);
+      font-size: 14px;
+    }
+    .dark-tile p { color: var(--muted); }
+    .num {
+      color: var(--blue);
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .dark-tile .num { color: var(--cyan); }
+
+    .survey-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 420px;
+      gap: 22px;
+      align-items: start;
+    }
+    .form-panel, .result-panel {
+      border: 1px solid #dce4ef;
+      background: #fff;
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .result-panel {
+      position: sticky;
+      top: 88px;
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    label {
+      display: grid;
+      gap: 7px;
+      color: #314055;
+      font-size: 13px;
+      font-weight: 750;
+    }
+    input, select, textarea {
+      width: 100%;
+      color: var(--dark-text);
+      background: #f9fbfe;
+      border: 1px solid #d7e0ec;
+      border-radius: 6px;
+      padding: 10px 11px;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(75,141,255,.14);
+    }
+    .dimension {
+      padding: 18px 0;
+      border-top: 1px solid #e0e7f0;
+    }
+    .dimension:first-of-type { border-top: 0; }
+    .dimension-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .dimension-title {
+      font-weight: 850;
+      color: #172235;
+    }
+    .score-badge {
+      min-width: 34px;
+      text-align: center;
+      color: #06101c;
+      background: #d9fff8;
+      border: 1px solid #b5eee5;
+      border-radius: 6px;
+      padding: 2px 7px;
+      font-weight: 850;
+    }
+    .range-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    input[type="range"] {
+      accent-color: var(--blue);
+      padding: 0;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+    .range-scale {
+      display: flex;
+      justify-content: space-between;
+      color: var(--soft-text);
+      font-size: 12px;
+    }
+    .dimension-help {
+      margin: 9px 0 0;
+      color: var(--soft-text);
+      font-size: 13px;
+    }
+    .survey-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .survey-actions .btn {
+      color: var(--dark-text);
+      background: #fff;
+      border-color: #d7e0ec;
+    }
+    .survey-actions .btn.primary {
+      color: #06101c;
+      background: var(--cyan);
+    }
+    .radar-wrap {
+      min-height: 340px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #e0e7f0;
+      background: #f9fbfe;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    #radarChart {
+      width: min(100%, 380px);
+      height: auto;
+      display: block;
+    }
+    .result-summary {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .result-card {
+      border: 1px solid #dce4ef;
+      background: #fbfdff;
+      border-left: 5px solid var(--blue);
+      border-radius: 6px;
+      padding: 13px;
+    }
+    .result-card h3 {
+      margin: 0 0 4px;
+      font-size: 16px;
+    }
+    .result-card p, .result-card ul {
+      margin: 0;
+      color: var(--soft-text);
+      font-size: 13px;
+    }
+    .result-card ul {
+      padding-left: 18px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 20px;
+    }
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .contact-item {
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: 8px;
+    }
+    .contact-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+    .contact-form {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .contact-form label { color: #dce9f8; }
+    .contact-form input, .contact-form textarea {
+      color: var(--ink);
+      background: #f7fbff;
+    }
+    .footer {
+      padding: 28px 0;
+      color: var(--muted);
+      background: #050b14;
+      font-size: 13px;
+    }
+    .footer .shell {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero-grid,
+      .section-head,
+      .survey-shell,
+      .contact-grid { grid-template-columns: 1fr; }
+      .grid-3,
+      .grid-2 { grid-template-columns: 1fr; }
+      .result-panel { position: static; }
+    }
+    @media (max-width: 640px) {
+      .shell { width: min(100% - 28px, 1180px); }
+      .hero { padding: 64px 0 54px; }
+      .section { padding: 56px 0; }
+      .field-grid { grid-template-columns: 1fr; }
+      .brand span:last-child { display: none; }
+      h1 { font-size: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav shell" aria-label="主导航">
+      <a class="brand" href="#top">
+        <span class="brand-mark"></span>
+        <span>北京润序数智科技有限公司</span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">服务</a>
+        <a href="#delivery-os">Delivery OS</a>
+        <a href="#cmmi">CMMI 调研</a>
+        <a href="#contact" class="nav-cta">联系我</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Digital Delivery Governance</p>
+          <h1>让复杂交付过程变得可见、可控、可改进</h1>
+          <p>北京润序数智科技有限公司专注于研发交付治理、CMMI 过程改进与 AI Agent 协同平台建设，帮助企业把需求、计划、风险、质量和复盘沉淀成持续运转的管理系统。</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#cmmi">开始 CMMI 调研</a>
+            <a class="btn" href="#contact">联系咨询</a>
+          </div>
+        </div>
+        <aside class="hero-board" aria-label="交付治理能力概览">
+          <div class="board-head">
+            <span class="board-title">Delivery OS 交付治理驾驶舱</span>
+            <span class="status-dot">示意运行中</span>
+          </div>
+          <div class="signal-list">
+            <div class="signal">
+              <span>需求质量可追溯</span>
+              <div class="track"><i style="width: 86%"></i></div>
+            </div>
+            <div class="signal">
+              <span>项目计划完整性</span>
+              <div class="track"><i style="width: 78%"></i></div>
+            </div>
+            <div class="signal">
+              <span>风险前置识别</span>
+              <div class="track"><i style="width: 72%"></i></div>
+            </div>
+            <div class="signal">
+              <span>质量闭环沉淀</span>
+              <div class="track"><i style="width: 81%"></i></div>
+            </div>
+            <div class="signal">
+              <span>组织复盘复用</span>
+              <div class="track"><i style="width: 68%"></i></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Services</span>
+            <h2>面向企业交付体系的三类服务</h2>
+          </div>
+          <p>从现状诊断到流程设计，再到工具化和 AI 化落地，围绕企业真实项目数据建立可持续的交付治理能力。</p>
+        </div>
+        <div class="grid-3">
+          <article class="tile">
+            <div class="num">01</div>
+            <h3>CMMI 过程改进诊断</h3>
+            <p>围绕需求管理、项目计划、风险管理、质量保证、度量分析等维度评估现状，输出差距、优先级和改进路线。</p>
+          </article>
+          <article class="tile">
+            <div class="num">02</div>
+            <h3>研发交付治理体系设计</h3>
+            <p>梳理角色、流程、模板、评审机制和度量指标，把项目管理经验沉淀为可执行、可追踪的组织标准。</p>
+          </article>
+          <article class="tile">
+            <div class="num">03</div>
+            <h3>Delivery OS 平台化落地</h3>
+            <p>连接飞书、Jira、禅道、Git、知识库等工具，构建交付看板、风险预警、报告生成和复盘沉淀能力。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="delivery-os" class="section dark">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Delivery OS</span>
+            <h2>客户现有工具之上的交付治理平台</h2>
+          </div>
+          <p>Delivery OS 不替代协同和研发工具，而是把分散过程数据转化为管理判断、行动建议和组织资产。</p>
+        </div>
+        <div class="grid-3">
+          <article class="tile dark-tile">
+            <div class="num">A</div>
+            <h3>过程数据连接</h3>
+            <p>整合需求、任务、缺陷、代码、文档和会议纪要，形成统一项目上下文。</p>
+          </article>
+          <article class="tile dark-tile">
+            <div class="num">B</div>
+            <h3>AI Agent 协同</h3>
+            <p>以受控 Agent 执行需求检查、风险识别、质量分析、周报生成和复盘整理。</p>
+          </article>
+          <article class="tile dark-tile">
+            <div class="num">C</div>
+            <h3>治理闭环回写</h3>
+            <p>将诊断结论、改进计划和审批动作回写到业务流程，形成可追责的闭环。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cmmi" class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="kicker">CMMI Survey</span>
+            <h2>CMMI 过程成熟度调研问卷</h2>
+          </div>
+          <p>填写基础信息并对 8 个关键维度打分，页面会即时生成雷达图、成熟度判断和改进建议。评分 1 表示较弱，5 表示体系化且持续优化。</p>
+        </div>
+
+        <div class="survey-shell">
+          <form class="form-panel" id="cmmiForm">
+            <div class="field-grid">
+              <label>
+                公司名称
+                <input id="companyName" name="companyName" placeholder="例如：某某科技有限公司" required />
+              </label>
+              <label>
+                联系人
+                <input id="contactName" name="contactName" placeholder="请输入联系人姓名" required />
+              </label>
+              <label>
+                联系电话
+                <input id="phone" name="phone" placeholder="请输入手机号或座机" required />
+              </label>
+              <label>
+                职务
+                <input id="title" name="title" placeholder="例如：CTO / 研发负责人 / PMO" required />
+              </label>
+              <label>
+                团队规模
+                <select id="teamSize" name="teamSize">
+                  <option>20 人以内</option>
+                  <option>20-100 人</option>
+                  <option>100-500 人</option>
+                  <option>500 人以上</option>
+                </select>
+              </label>
+              <label>
+                主要交付类型
+                <select id="deliveryType" name="deliveryType">
+                  <option>软件研发交付</option>
+                  <option>数字化项目交付</option>
+                  <option>咨询/实施交付</option>
+                  <option>硬件/制造项目交付</option>
+                </select>
+              </label>
+            </div>
+
+            <div id="dimensionFields"></div>
+
+            <label>
+              当前最希望解决的问题
+              <textarea id="painPoint" rows="4" placeholder="例如：需求变更频繁、项目延期、测试返工多、跨部门协作困难等"></textarea>
+            </label>
+
+            <div class="survey-actions">
+              <button class="btn primary" type="submit">生成评估结果</button>
+              <button class="btn" type="button" id="resetSurvey">重置问卷</button>
+            </div>
+          </form>
+
+          <aside class="result-panel" aria-live="polite">
+            <h3 style="margin:0 0 14px">评估雷达图</h3>
+            <div class="radar-wrap">
+              <svg id="radarChart" viewBox="0 0 420 420" role="img" aria-label="CMMI成熟度雷达图"></svg>
+            </div>
+            <div class="result-summary" id="resultSummary"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section dark">
+      <div class="shell contact-grid">
+        <div>
+          <span class="kicker">Contact</span>
+          <h2>联系我</h2>
+          <p style="color:var(--muted); margin:18px 0 0">如果你希望进一步做 CMMI 差距诊断、研发交付治理体系设计，或把现有项目数据接入 Delivery OS，可以留下信息进行沟通。</p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <span>公司名称</span>
+              北京润序数智科技有限公司
+            </div>
+            <div class="contact-item">
+              <span>服务方向</span>
+              CMMI 过程改进 / 研发交付治理 / AI Agent 协同平台
+            </div>
+            <div class="contact-item">
+              <span>建议沟通材料</span>
+              当前项目流程、组织架构、需求模板、缺陷数据、项目延期或返工案例
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="field-grid">
+            <label>
+              姓名
+              <input id="contactPerson" placeholder="请输入姓名" required />
+            </label>
+            <label>
+              电话
+              <input id="contactPhone" placeholder="请输入联系电话" required />
+            </label>
+          </div>
+          <label>
+            公司
+            <input id="contactCompany" placeholder="请输入公司名称" />
+          </label>
+          <label style="margin-top:14px">
+            咨询内容
+            <textarea id="contactMessage" rows="5" placeholder="请简要描述你的交付治理或 CMMI 改进诉求"></textarea>
+          </label>
+          <div class="survey-actions">
+            <button class="btn primary" type="submit">生成联系摘要</button>
+          </div>
+          <p id="contactOutput" style="color:var(--muted); margin:12px 0 0; font-size:13px"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <span>© 北京润序数智科技有限公司</span>
+      <span>Delivery OS · 交付治理平台 · CMMI 过程改进</span>
+    </div>
+  </footer>
+
+  <script>
+    const dimensions = [
+      {
+        id: "req",
+        name: "需求管理",
+        help: "需求来源、变更、评审、验收标准是否清晰且可追溯。",
+        advice: "建立统一需求模板、需求评审清单和变更影响评估机制。"
+      },
+      {
+        id: "plan",
+        name: "项目计划",
+        help: "计划是否覆盖范围、里程碑、资源、依赖和验收路径。",
+        advice: "补齐 WBS、里程碑基线、资源负载和跨部门依赖管理。"
+      },
+      {
+        id: "monitor",
+        name: "项目监控",
+        help: "项目进度、风险、阻塞和偏差是否被持续跟踪。",
+        advice: "建立周度项目健康度看板，跟踪偏差、阻塞、风险和责任人。"
+      },
+      {
+        id: "quality",
+        name: "质量保证",
+        help: "评审、测试、缺陷闭环和质量门禁是否稳定执行。",
+        advice: "设置关键质量门禁，沉淀缺陷分类、评审清单和测试准入标准。"
+      },
+      {
+        id: "config",
+        name: "配置管理",
+        help: "代码、文档、版本、发布包和基线是否受控。",
+        advice: "明确基线、版本命名、发布审批和配置项责任边界。"
+      },
+      {
+        id: "measure",
+        name: "度量分析",
+        help: "是否用数据分析交付效率、质量、返工和改进效果。",
+        advice: "建立少量关键指标，如需求变更率、缺陷逃逸率、延期率和返工率。"
+      },
+      {
+        id: "risk",
+        name: "风险管理",
+        help: "风险是否前置识别、分级、跟踪和复盘。",
+        advice: "建立风险登记册和触发规则，提前识别需求、依赖、资源和质量风险。"
+      },
+      {
+        id: "improve",
+        name: "过程改进",
+        help: "复盘经验是否沉淀为流程、模板、规则和培训。",
+        advice: "把项目复盘输出转化为组织级模板、检查项和改进 Backlog。"
+      }
+    ];
+
+    const dimensionFields = document.getElementById("dimensionFields");
+    const resultSummary = document.getElementById("resultSummary");
+    const radarChart = document.getElementById("radarChart");
+
+    function renderFields() {
+      dimensionFields.innerHTML = dimensions.map((dim) => `
+        <section class="dimension">
+          <div class="dimension-head">
+            <span class="dimension-title">${dim.name}</span>
+            <span class="score-badge" id="${dim.id}Value">3</span>
+          </div>
+          <label class="range-row">
+            <input type="range" min="1" max="5" step="1" value="3" id="${dim.id}" name="${dim.id}" aria-label="${dim.name}评分" />
+            <span class="range-scale"><span>1 较弱</span><span>3 初步规范</span><span>5 持续优化</span></span>
+          </label>
+          <p class="dimension-help">${dim.help}</p>
+        </section>
+      `).join("");
+
+      dimensions.forEach((dim) => {
+        const input = document.getElementById(dim.id);
+        const badge = document.getElementById(`${dim.id}Value`);
+        input.addEventListener("input", () => {
+          badge.textContent = input.value;
+          updateResult();
+        });
+      });
+    }
+
+    function getScores() {
+      return dimensions.map((dim) => Number(document.getElementById(dim.id).value));
+    }
+
+    function polarToCartesian(cx, cy, radius, angle) {
+      const adjusted = angle - Math.PI / 2;
+      return {
+        x: cx + radius * Math.cos(adjusted),
+        y: cy + radius * Math.sin(adjusted)
+      };
+    }
+
+    function pointsForScores(scores, cx, cy, radius) {
+      return scores.map((score, index) => {
+        const angle = (Math.PI * 2 * index) / scores.length;
+        const point = polarToCartesian(cx, cy, radius * (score / 5), angle);
+        return `${point.x.toFixed(1)},${point.y.toFixed(1)}`;
+      }).join(" ");
+    }
+
+    function drawRadar(scores) {
+      const cx = 210;
+      const cy = 210;
+      const radius = 135;
+      const rings = [1, 2, 3, 4, 5];
+      const axis = dimensions.map((dim, index) => {
+        const angle = (Math.PI * 2 * index) / dimensions.length;
+        const end = polarToCartesian(cx, cy, radius, angle);
+        const label = polarToCartesian(cx, cy, radius + 34, angle);
+        const anchor = label.x > cx + 12 ? "start" : label.x < cx - 12 ? "end" : "middle";
+        return `
+          <line x1="${cx}" y1="${cy}" x2="${end.x}" y2="${end.y}" stroke="#d2dce9" stroke-width="1" />
+          <text x="${label.x}" y="${label.y}" text-anchor="${anchor}" dominant-baseline="middle" fill="#526176" font-size="12">${dim.name}</text>
+        `;
+      }).join("");
+
+      const ringShapes = rings.map((level) => {
+        const ringScores = new Array(dimensions.length).fill(level);
+        return `<polygon points="${pointsForScores(ringScores, cx, cy, radius)}" fill="none" stroke="#dce4ef" stroke-width="1" />`;
+      }).join("");
+
+      const dataPoints = scores.map((score, index) => {
+        const angle = (Math.PI * 2 * index) / scores.length;
+        const point = polarToCartesian(cx, cy, radius * (score / 5), angle);
+        return `<circle cx="${point.x}" cy="${point.y}" r="4" fill="#1dbfaa" stroke="#ffffff" stroke-width="2" />`;
+      }).join("");
+
+      radarChart.innerHTML = `
+        <rect width="420" height="420" fill="#f9fbfe" />
+        ${ringShapes}
+        ${axis}
+        <polygon points="${pointsForScores(scores, cx, cy, radius)}" fill="rgba(75,141,255,.28)" stroke="#2268f2" stroke-width="3" />
+        ${dataPoints}
+        <text x="210" y="394" text-anchor="middle" fill="#7a8899" font-size="12">1-5 分，分数越高代表体系化程度越高</text>
+      `;
+    }
+
+    function maturityLabel(avg) {
+      if (avg < 2) return { title: "起步阶段", text: "流程主要依赖个人经验，需要优先建立基础规范和责任边界。", color: "var(--red)" };
+      if (avg < 3) return { title: "初步规范阶段", text: "已有局部流程，但一致性和数据化程度不足，需要推动跨项目标准化。", color: "var(--amber)" };
+      if (avg < 4) return { title: "体系化建设阶段", text: "核心过程已形成框架，建议强化度量、风险预警和持续改进机制。", color: "var(--blue)" };
+      return { title: "持续优化阶段", text: "组织具备较成熟的交付治理基础，可进一步平台化和智能化。", color: "var(--green)" };
+    }
+
+    function updateResult() {
+      const scores = getScores();
+      drawRadar(scores);
+
+      const avg = scores.reduce((sum, value) => sum + value, 0) / scores.length;
+      const sorted = dimensions.map((dim, index) => ({ ...dim, score: scores[index] }))
+        .sort((a, b) => a.score - b.score);
+      const weakest = sorted.slice(0, 3);
+      const strongest = sorted.slice(-2).reverse();
+      const maturity = maturityLabel(avg);
+      const company = document.getElementById("companyName").value.trim() || "当前企业";
+
+      resultSummary.innerHTML = `
+        <article class="result-card" style="border-left-color:${maturity.color}">
+          <h3>${company}：${maturity.title}</h3>
+          <p>平均得分 ${avg.toFixed(1)} / 5。${maturity.text}</p>
+        </article>
+        <article class="result-card">
+          <h3>相对优势</h3>
+          <p>${strongest.map(item => `${item.name} ${item.score}分`).join("；")}</p>
+        </article>
+        <article class="result-card">
+          <h3>优先改进建议</h3>
+          <ul>${weakest.map(item => `<li>${item.name}：${item.advice}</li>`).join("")}</ul>
+        </article>
+      `;
+    }
+
+    document.getElementById("cmmiForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      updateResult();
+      document.querySelector(".result-panel").scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+
+    document.getElementById("resetSurvey").addEventListener("click", () => {
+      document.getElementById("cmmiForm").reset();
+      dimensions.forEach((dim) => {
+        document.getElementById(`${dim.id}Value`).textContent = "3";
+      });
+      updateResult();
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const name = document.getElementById("contactPerson").value.trim();
+      const phone = document.getElementById("contactPhone").value.trim();
+      const company = document.getElementById("contactCompany").value.trim() || "未填写公司";
+      document.getElementById("contactOutput").textContent = `已生成联系摘要：${company}，联系人 ${name}，电话 ${phone}。静态页面不会自动发送信息，可复制此摘要用于后续沟通。`;
+    });
+
+    renderFields();
+    updateResult();
+  </script>
+</body>
+</html>
