@@ -37,6 +37,7 @@
     }
     a { color: inherit; text-decoration: none; }
     button, input, select, textarea { font: inherit; }
+    img { display: block; max-width: 100%; }
     .shell { width: var(--shell); margin-inline: auto; }
 
     .topbar {
@@ -205,6 +206,34 @@
       height: 100%;
       background: linear-gradient(90deg, var(--blue), var(--cyan));
       border-radius: inherit;
+    }
+    .hero-contact {
+      display: grid;
+      grid-template-columns: 126px 1fr;
+      gap: 16px;
+      align-items: center;
+      margin-top: 22px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+    .hero-contact img {
+      width: 126px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #fff;
+      border: 8px solid #fff;
+    }
+    .hero-contact b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--ink);
+      font-size: 18px;
+    }
+    .hero-contact span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
     }
 
     .section {
@@ -459,6 +488,34 @@
       font-size: 12px;
       margin-bottom: 3px;
     }
+    .qr-card {
+      display: grid;
+      grid-template-columns: 148px 1fr;
+      gap: 16px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: 8px;
+    }
+    .qr-card img {
+      width: 148px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #fff;
+      border: 8px solid #fff;
+    }
+    .qr-card h3 {
+      margin: 0 0 6px;
+      color: var(--ink);
+      font-size: 18px;
+    }
+    .qr-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
     .contact-form {
       border: 1px solid var(--line);
       background: var(--panel);
@@ -500,6 +557,10 @@
       .field-grid { grid-template-columns: 1fr; }
       .brand span:last-child { display: none; }
       h1 { font-size: 40px; }
+      .hero-contact,
+      .qr-card { grid-template-columns: 1fr; }
+      .hero-contact img,
+      .qr-card img { width: 180px; }
     }
   </style>
 </head>
@@ -556,6 +617,13 @@
             <div class="signal">
               <span>组织复盘复用</span>
               <div class="track"><i style="width: 68%"></i></div>
+            </div>
+          </div>
+          <div class="hero-contact">
+            <img src="assets/feishu-qr.png" alt="飞书联系人二维码" />
+            <div>
+              <b>联系我</b>
+              <span>扫码添加飞书联系人，沟通 CMMI 评估、交付治理诊断或 Delivery OS 落地方案。</span>
             </div>
           </div>
         </aside>
@@ -700,6 +768,13 @@
           <h2>联系我</h2>
           <p style="color:var(--muted); margin:18px 0 0">如果你希望进一步做 CMMI 差距诊断、研发交付治理体系设计，或把现有项目数据接入 Delivery OS，可以留下信息进行沟通。</p>
           <div class="contact-list">
+            <div class="qr-card">
+              <img src="assets/feishu-qr.png" alt="飞书联系人二维码" />
+              <div>
+                <h3>扫码添加飞书</h3>
+                <p>添加“元序AI”为联系人，适合沟通 CMMI 调研、研发交付治理、项目风险诊断和 AI Agent 协同平台建设。</p>
+              </div>
+            </div>
             <div class="contact-item">
               <span>公司名称</span>
               北京润序数智科技有限公司
