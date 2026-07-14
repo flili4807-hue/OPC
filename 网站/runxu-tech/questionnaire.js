@@ -17,26 +17,14 @@ function getLevel(score) {
 function calculate() {
   const selects = [...form.querySelectorAll('select')];
   const values = selects.map((select) => Number(select.value));
-  const answered = values.filter((value) => value > 0);
-  const score = Math.round((answered.reduce((sum, value) => sum + value, 0) / (selects.length * 5)) * 100);
-  const progress = Math.round((answered.length / selects.length) * 100);
-  const isComplete = answered.length === selects.length;
-
-  scoreBar.style.width = `${isComplete ? score : progress}%`;
-  resultCta.hidden = !isComplete;
-
-  if (!isComplete) {
-    scoreLabel.textContent = '完成进度';
-    scoreValue.textContent = `${answered.length}/${selects.length}`;
-    scoreLevel.textContent = answered.length ? `已完成 ${answered.length}/${selects.length} 题` : '请完成问卷';
-    scoreAdvice.textContent = '未完成前只显示进度；全部完成后再生成项目成功率得分、CMMI 成熟度映射和治理建议。';
-    return;
-  }
+  const score = Math.round((values.reduce((sum, value) => sum + value, 0) / (selects.length * 5)) * 100);
 
   const [level, advice] = getLevel(score);
   scoreLabel.textContent = '项目成功率得分';
   scoreValue.textContent = String(score);
   scoreLevel.textContent = level;
+  scoreBar.style.width = `${score}%`;
+  resultCta.hidden = false;
   scoreAdvice.textContent = `${advice} 建议带着评测结果预约一次 30 分钟项目诊断。`;
 }
 
