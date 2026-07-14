@@ -24,6 +24,7 @@ const nextActionText = document.getElementById('nextActionText');
 
 const LEAD_DRAFT_KEY = 'runxu:v2:leadDraft';
 const REQUEST_TIMEOUT_MS = 10000;
+const STATIC_PAGE_HOSTS = ['github.io'];
 
 const DIMENSIONS = [
   { key: 'A', name: '目标与范围', short: '目标', fields: ['A1', 'A2', 'A3'], advice: '优先明确业务目标、用户目标、成功指标、本期范围和不做事项。' },
@@ -367,6 +368,18 @@ async function postWithTimeout(url, options, timeoutMs) {
   }
 }
 
+function isStaticHosting() {
+  return window.location.protocol === 'file:'
+    || STATIC_PAGE_HOSTS.some((host) => window.location.hostname.endsWith(host));
+}
+
+function unlockReportLocally() {
+  sessionStorage.removeItem(LEAD_DRAFT_KEY);
+  leadModal.hidden = true;
+  setState('unlocked');
+  unlockedReport?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 async function submitLead(event) {
   event.preventDefault();
   const { valid, values } = validateLeadForm();
@@ -412,6 +425,11 @@ async function submitLead(event) {
     setState('unlocked');
     unlockedReport?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } catch (error) {
+    if (isStaticHosting()) {
+      console.warn('[runxu] static hosting mode, unlock report locally:', error);
+      unlockReportLocally();
+      return;
+    }
     setState('failed');
     leadStatus.className = 'lead-status is-error';
     leadStatus.textContent = error.name === 'AbortError' ? '提交超时，请稍后重试。' : (error.message || '提交失败，请稍后重试。');
