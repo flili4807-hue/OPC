@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="北京润序科技项目成功率自评问卷，基于 CMMI 成熟度映射评估项目交付健康度、风险维度和 PMO 治理优先级。" />
+  <title>项目成功率自评｜北京润序科技 Runxu Tech</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="questionnaire-page">
+  <header class="nav shell">
+    <a class="brand" href="./index.html" aria-label="返回 Runxu Tech 首页">
+      <span class="brand-mark"></span>
+      <span>RUNXU TECH</span>
+    </a>
+    <nav aria-label="问卷导航">
+      <a href="./index.html#services">服务</a>
+      <a href="./index.html#diagnostic">评测模型</a>
+      <a href="./index.html#contact">联系</a>
+    </nav>
+    <a class="button button-small" href="./index.html#contact">预约咨询 <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="questionnaire-hero shell">
+      <p class="eyebrow"><span></span> PROJECT SUCCESS DIAGNOSTIC</p>
+      <h1>项目成功率自评问卷</h1>
+      <p>用 24 个问题快速判断项目或团队当前的交付健康度，映射 CMMI 成熟度，并识别优先治理方向。本工具用于管理诊断，不等同于官方 CMMI 评估或认证。</p>
+    </section>
+
+    <section class="shell questionnaire-layout">
+      <aside class="score-panel">
+        <p>当前得分</p>
+        <strong id="scoreValue">0</strong>
+        <span id="scoreLevel">请完成问卷</span>
+        <div class="score-bar"><i id="scoreBar"></i></div>
+        <p id="scoreAdvice">每题选择 1-5 分，系统会自动计算项目成功率和成熟度映射。</p>
+      </aside>
+
+      <form class="questionnaire-form" id="diagnosticForm">
+        <section class="question-group">
+          <h2>A. 目标与范围</h2>
+          <label><span>项目是否有明确业务目标、用户目标和成功指标？</span><select name="A1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>本期范围和不做事项是否清楚？</span><select name="A2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>关键里程碑和交付节奏是否已被核心角色认可？</span><select name="A3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+
+        <section class="question-group">
+          <h2>B. 组织与职责</h2>
+          <label><span>产品、研发、算法、测试、设计、运营等角色职责是否明确？</span><select name="B1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>是否有项目 Owner 对进度、风险和最终交付负责？</span><select name="B2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>跨团队依赖是否有明确负责人和响应机制？</span><select name="B3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+
+        <section class="question-group">
+          <h2>C. 需求与变更</h2>
+          <label><span>需求是否有结构化 PRD、原型或技术方案支撑？</span><select name="C1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>需求变更是否有评估、审批、记录和排期影响说明？</span><select name="C2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>核心业务规则、异常场景和验收标准是否明确？</span><select name="C3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+
+        <section class="question-group">
+          <h2>D. 计划与风险</h2>
+          <label><span>是否有完整项目计划、里程碑和关键路径？</span><select name="D1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>是否定期识别风险、阻塞项和决策事项？</span><select name="D2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>高风险事项是否有预案、降级或回滚策略？</span><select name="D3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+
+        <section class="question-group">
+          <h2>E. 质量与测试</h2>
+          <label><span>是否有测试计划覆盖主流程、异常流程和边界场景？</span><select name="E1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>是否有准入准出标准、缺陷等级和发布门禁？</span><select name="E2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>上线前是否有 Go/No-Go 检查机制？</span><select name="E3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+
+        <section class="question-group">
+          <h2>F. 数据与效能</h2>
+          <label><span>是否有进度、质量、效率、风险相关指标？</span><select name="F1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>是否有可视化看板跟踪吞吐率、延期率、缺陷率或线上问题？</span><select name="F2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>数据是否被用于复盘、决策和过程改进？</span><select name="F3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+
+        <section class="question-group">
+          <h2>G. 工具链与流程</h2>
+          <label><span>Jira、禅道、飞书多维表格等工具是否被稳定使用？</span><select name="G1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>需求、任务、缺陷、风险、版本是否在线化管理？</span><select name="G2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>是否有版本管理、分支模型、CI/CD 或自动化测试机制？</span><select name="G3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+
+        <section class="question-group">
+          <h2>H. 复盘与持续改进</h2>
+          <label><span>每个关键版本是否做复盘？</span><select name="H1"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>复盘问题是否进入改进闭环并跟踪完成？</span><select name="H2"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+          <label><span>组织是否沉淀模板、SOP、知识库和最佳实践？</span><select name="H3"><option value="0">请选择</option><option value="1">1 分</option><option value="2">2 分</option><option value="3">3 分</option><option value="4">4 分</option><option value="5">5 分</option></select></label>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <a class="brand" href="./index.html"><span class="brand-mark"></span><span>RUNXU TECH</span></a>
+    <p>© 2026 北京润序科技有限责任公司. Runxu Tech.</p>
+    <a href="./index.html">返回首页 ↑</a>
+  </footer>
+
+  <script>
+    const form = document.getElementById('diagnosticForm');
+    const scoreValue = document.getElementById('scoreValue');
+    const scoreLevel = document.getElementById('scoreLevel');
+    const scoreBar = document.getElementById('scoreBar');
+    const scoreAdvice = document.getElementById('scoreAdvice');
+
+    function getLevel(score) {
+      if (score >= 85) return ['高成功概率 · CMMI L4-L5', '过程稳定，建议继续强化数据驱动和组织级最佳实践沉淀。'];
+      if (score >= 70) return ['可控推进 · CMMI L3-L4', '项目基本可控，建议加强风险前置、发布门禁和复盘闭环。'];
+      if (score >= 55) return ['需要治理 · CMMI L2-L3', '存在明显交付风险，建议优先补齐计划、依赖、风险和质量机制。'];
+      if (score >= 40) return ['高风险 · CMMI L1-L2', '项目强依赖个人推动，建议先做项目治理重构再加速交付。'];
+      return ['极高风险 · CMMI L1', '缺少基本管理控制，建议先完成目标、范围、组织和质量体系梳理。'];
+    }
+
+    function calculate() {
+      const selects = [...form.querySelectorAll('select')];
+      const values = selects.map(select => Number(select.value));
+      const answered = values.filter(value => value > 0);
+      const score = Math.round((answered.reduce((sum, value) => sum + value, 0) / (selects.length * 5)) * 100);
+      const [level, advice] = getLevel(score);
+      scoreValue.textContent = String(score);
+      scoreLevel.textContent = answered.length === selects.length ? level : `已完成 ${answered.length}/${selects.length} 题`;
+      scoreBar.style.width = `${score}%`;
+      scoreAdvice.textContent = answered.length ? advice : '每题选择 1-5 分，系统会自动计算项目成功率和成熟度映射。';
+    }
+
+    form.addEventListener('change', calculate);
+  </script>
+</body>
+</html>
