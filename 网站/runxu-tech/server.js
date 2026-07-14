@@ -13,6 +13,7 @@ const __dirname = path.dirname(__filename);
 loadEnv(path.join(__dirname, '.env'));
 
 const PORT = Number(process.env.PORT || 8765);
+const HOST = process.env.HOST || '127.0.0.1';
 const DATABASE_PATH = path.resolve(__dirname, process.env.DATABASE_PATH || './data/runxu-leads.sqlite');
 const DATA_DIR = path.dirname(DATABASE_PATH);
 const RATE_LIMIT_WINDOW_MS = Number(process.env.RATE_LIMIT_WINDOW_MS || 600000);
@@ -725,6 +726,6 @@ const server = http.createServer((req, res) => {
   res.end('Method Not Allowed');
 });
 
-server.listen(PORT, '127.0.0.1', () => {
-  logSafe(`Runxu Tech V2.0 server listening`, { url: `http://127.0.0.1:${PORT}/` });
+server.listen(PORT, HOST, () => {
+  logSafe(`Runxu Tech V2.0 server listening`, { url: `http://${HOST}:${PORT}/` });
 });
