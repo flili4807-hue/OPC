@@ -577,6 +577,40 @@ async function writeBitableRecord(lead) {
   }
 }
 
+async function deliverLeadNotifications(lead) {
+  const status = {
+    email: 'pending',
+    feishu: 'pending',
+    bitable: 'pending',
+    bitableRecordId: '',
+    bitableError: '',
+    feishuError: ''
+  };
+
+  try {
+    status.email = await sendEmail(lead);
+  } catch (error) {
+    status.email = 'failed';
+    logSafe('email notify failed', { leadId: lead.leadId, message: error.message });
+  }
+
+  const feishuResult = await sendFeishuCard(lead);
+  const bitableResult = await writeBitableRecord(lead);
+  status.feishu = feishuResult.status;
+  status.feishuError = feishuResult.error || '';
+  status.bitable = bitableResult.status;
+  status.bitableRecordId = bitableResult.recordId || '';
+  status.bitableError = bitableResult.error || '';
+
+  await updateNotifyStatus(lead.leadId, status);
+  logSafe('lead notifications updated', {
+    leadId: lead.leadId,
+    notifyEmail: status.email,
+    notifyFeishu: status.feishu,
+    notifyBitable: status.bitable
+  });
+}
+
 async function handleLeadSubmit(req, res) {
   try {
     const payload = await parseJsonBody(req);
@@ -619,22 +653,6 @@ async function handleLeadSubmit(req, res) {
       firstQuestion: buildFirstQuestion(diagnostic)
     };
     await insertLead(baseLead);
-    baseLead.notifyEmail = await sendEmail(baseLead);
-    const feishuResult = await sendFeishuCard(baseLead);
-    const bitableResult = await writeBitableRecord(baseLead);
-    baseLead.notifyFeishu = feishuResult.status;
-    baseLead.feishuError = feishuResult.error || '';
-    baseLead.notifyBitable = bitableResult.status;
-    baseLead.bitableRecordId = bitableResult.recordId || '';
-    baseLead.bitableError = bitableResult.error || '';
-    await updateNotifyStatus(baseLead.leadId, {
-      email: baseLead.notifyEmail,
-      feishu: baseLead.notifyFeishu,
-      bitable: baseLead.notifyBitable,
-      bitableRecordId: baseLead.bitableRecordId,
-      bitableError: baseLead.bitableError,
-      feishuError: baseLead.feishuError
-    });
     logSafe('lead saved', {
       leadId: baseLead.leadId,
       contactHash,
@@ -653,6 +671,9 @@ async function handleLeadSubmit(req, res) {
         feishu: baseLead.notifyFeishu,
         bitable: baseLead.notifyBitable
       }
+    });
+    deliverLeadNotifications(baseLead).catch((error) => {
+      logSafe('lead notification worker failed', { leadId: baseLead.leadId, message: error.message });
     });
   } catch (error) {
     const code = error.code || 'UNKNOWN_ERROR';
