@@ -1,0 +1,13 @@
+{
+  "name": "runxu-tech-website",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "export:leads": "node scripts/export-leads.js",
+    "retry:bitable": "node scripts/retry-bitable.js",
+    "check": "node --check server.js && node --check questionnaire.js && node --check scripts/export-leads.js && node --check scripts/retry-bitable.js"
+  }
+}

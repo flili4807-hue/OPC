@@ -1,0 +1,20 @@
+{
+  "leadId": "线索ID",
+  "createdAt": "提交时间",
+  "source": "来源",
+  "company": "公司/团队",
+  "name": "姓名",
+  "role": "角色",
+  "contact": "联系方式",
+  "score": "总分",
+  "level": "风险等级",
+  "leadQuality": "线索等级",
+  "duplicate": "是否重复",
+  "dimensions": "雷达图数据",
+  "weaknesses": "Top短板",
+  "firstQuestion": "建议首问",
+  "followupAction": "建议跟进动作",
+  "projectBackground": "项目背景",
+  "followStatus": "跟进状态",
+  "bitableStatus": "写入状态"
+}
