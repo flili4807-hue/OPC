@@ -1,923 +1,274 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>润序数智科技有限公司｜Delivery OS商业计划书</title>
-  <meta name="description" content="Delivery OS商业计划书：面向复杂知识工作的交付治理平台。" />
-  <style>
-    :root {
-      --ink: #172033;
-      --muted: #647086;
-      --line: #dce3ee;
-      --paper: #f6f8fb;
-      --white: #ffffff;
-      --navy: #0b1729;
-      --blue: #245be8;
-      --teal: #00a99d;
-      --green: #18a267;
-      --amber: #d88918;
-      --red: #c74c4c;
-      --violet: #6554c0;
-      --shadow: 0 16px 42px rgba(20, 38, 70, .08);
-      --shell: min(1160px, calc(100vw - 40px));
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--paper);
-      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-    img { display: block; max-width: 100%; }
-    .shell { width: var(--shell); margin-inline: auto; }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      color: #fff;
-      background: rgba(11, 23, 41, .94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255,255,255,.1);
-    }
-    .nav {
-      min-height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 22px;
-    }
-    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; }
-    .brand-mark {
-      width: 32px;
-      height: 32px;
-      display: grid;
-      place-items: center;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--blue), var(--teal));
-      box-shadow: 0 8px 24px rgba(36, 91, 232, .35);
-    }
-    .brand-mark::after { content: "D"; font-size: 14px; }
-    .links { display: flex; align-items: center; gap: 18px; color: #bfccdc; font-size: 13px; }
-    .links a:hover { color: #fff; }
-    .print {
-      color: #fff;
-      background: transparent;
-      border: 1px solid rgba(255,255,255,.28);
-      border-radius: 999px;
-      padding: 7px 13px;
-      cursor: pointer;
-    }
-
-    .hero {
-      color: #fff;
-      background:
-        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(255,255,255,.04) 1px, transparent 1px),
-        radial-gradient(circle at 78% 20%, rgba(0, 169, 157, .32), transparent 30%),
-        radial-gradient(circle at 18% 72%, rgba(36, 91, 232, .3), transparent 34%),
-        linear-gradient(135deg, #081220 0%, #14243a 58%, #0b1729 100%);
-      background-size: 42px 42px, 42px 42px, auto, auto, auto;
-      padding: 92px 0 68px;
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 44px;
-      align-items: end;
-    }
-    .eyebrow {
-      margin: 0 0 12px;
-      color: #8ee9dc;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    h1 {
-      margin: 0;
-      max-width: 780px;
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.08;
-      letter-spacing: 0;
-    }
-    .hero-copy {
-      max-width: 720px;
-      margin: 24px 0 0;
-      color: #d8e2f2;
-      font-size: 18px;
-    }
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 28px;
-    }
-    .hero-meta span {
-      padding: 7px 12px;
-      border: 1px solid rgba(255,255,255,.18);
-      border-radius: 999px;
-      background: rgba(255,255,255,.08);
-      color: #e3ecf8;
-      font-size: 12px;
-    }
-    .thesis {
-      padding: 28px;
-      border: 1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.08);
-      box-shadow: 0 24px 70px rgba(0,0,0,.22);
-    }
-    .thesis b {
-      display: block;
-      color: #7df0c2;
-      font-size: 44px;
-      line-height: 1;
-      margin-bottom: 16px;
-    }
-    .thesis h2 { margin: 0 0 10px; font-size: 24px; }
-    .thesis p { margin: 0; color: #c7d5e8; }
-
-    .section { padding: 78px 0; }
-    .section.white { background: #fff; }
-    .section.dark { color: #fff; background: var(--navy); }
-    .section-head {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 36px;
-      align-items: end;
-      margin-bottom: 34px;
-    }
-    .kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-      color: var(--blue);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .kicker::before { content: ""; width: 28px; height: 2px; background: currentColor; }
-    .dark .kicker { color: #7df0c2; }
-    .section h2 {
-      margin: 0;
-      font-size: clamp(30px, 4vw, 46px);
-      line-height: 1.16;
-      letter-spacing: 0;
-    }
-    .section-head p { margin: 0; color: var(--muted); }
-    .dark .section-head p { color: #afbdd0; }
-
-    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-    .card {
-      border: 1px solid var(--line);
-      background: var(--white);
-      box-shadow: var(--shadow);
-      padding: 22px;
-      border-radius: 8px;
-    }
-    .dark .card { color: var(--ink); }
-    .card h3 { margin: 0 0 8px; font-size: 18px; }
-    .card p { margin: 0; color: var(--muted); font-size: 14px; }
-    .num {
-      color: var(--blue);
-      font-size: 30px;
-      font-weight: 850;
-      line-height: 1;
-      margin-bottom: 12px;
-    }
-    .tag {
-      display: inline-flex;
-      margin-bottom: 12px;
-      padding: 5px 10px;
-      color: var(--blue);
-      background: #edf3ff;
-      border: 1px solid #d7e4ff;
-      font-size: 12px;
-      font-weight: 750;
-    }
-    .tag.green { color: var(--green); background: #eaf8f2; border-color: #cdeedd; }
-    .tag.amber { color: var(--amber); background: #fff5e5; border-color: #f0d9a7; }
-    .tag.violet { color: var(--violet); background: #f1efff; border-color: #ddd7ff; }
-
-    .pain-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 14px;
-    }
-    .pain {
-      min-height: 178px;
-      padding: 20px;
-      border-left: 5px solid var(--blue);
-      background: #fff;
-      box-shadow: var(--shadow);
-    }
-    .pain:nth-child(2) { border-color: var(--red); }
-    .pain:nth-child(3) { border-color: var(--teal); }
-    .pain:nth-child(4) { border-color: var(--amber); }
-    .pain:nth-child(5) { border-color: var(--violet); }
-    .pain:nth-child(6) { border-color: var(--green); }
-    .pain h3 { margin: 0 0 8px; font-size: 17px; }
-    .pain p { margin: 0; color: var(--muted); font-size: 13px; }
-
-    .solution {
-      display: grid;
-      grid-template-columns: .94fr 1.06fr;
-      gap: 24px;
-      align-items: stretch;
-    }
-    .screen {
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: var(--shadow);
-    }
-    .screen figcaption {
-      padding: 12px 16px;
-      color: var(--muted);
-      font-size: 12px;
-      border-top: 1px solid var(--line);
-    }
-    .flow {
-      display: grid;
-      gap: 12px;
-    }
-    .flow-step {
-      display: grid;
-      grid-template-columns: 58px 1fr;
-      gap: 14px;
-      align-items: start;
-      padding: 18px;
-      border: 1px solid var(--line);
-      background: #fff;
-      box-shadow: var(--shadow);
-    }
-    .flow-step strong {
-      width: 44px;
-      height: 44px;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      background: var(--navy);
-      font-size: 14px;
-    }
-    .flow-step h3 { margin: 0 0 4px; font-size: 17px; }
-    .flow-step p { margin: 0; color: var(--muted); font-size: 13px; }
-
-    .business {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-    .price {
-      border-top: 5px solid var(--blue);
-      min-height: 210px;
-    }
-    .price:nth-child(2) { border-color: var(--teal); }
-    .price:nth-child(3) { border-color: var(--green); }
-    .price:nth-child(4) { border-color: var(--amber); }
-    .price b {
-      display: block;
-      margin: 12px 0;
-      color: var(--ink);
-      font-size: 24px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      overflow: hidden;
-      background: #fff;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--line);
-    }
-    th, td {
-      padding: 16px 18px;
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      vertical-align: top;
-      font-size: 14px;
-    }
-    th {
-      color: #fff;
-      background: var(--navy);
-      font-weight: 800;
-    }
-    tr:last-child td { border-bottom: 0; }
-    td:first-child { font-weight: 750; color: var(--ink); }
-
-    .moat {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-    .roadmap {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-    .stage {
-      position: relative;
-      padding: 22px;
-      min-height: 260px;
-      color: #fff;
-      background: #12305a;
-    }
-    .stage:nth-child(2) { background: #144e59; }
-    .stage:nth-child(3) { background: #28503d; }
-    .stage:nth-child(4) { background: #4a3f78; }
-    .stage small { color: rgba(255,255,255,.72); font-weight: 800; }
-    .stage h3 { margin: 34px 0 18px; font-size: 24px; line-height: 1.22; }
-    .stage p { margin: 0; color: rgba(255,255,255,.82); font-size: 14px; }
-
-    .funding {
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 22px;
-      align-items: stretch;
-    }
-    .ask {
-      padding: 28px;
-      color: #fff;
-      background: linear-gradient(135deg, var(--blue), #149d94);
-    }
-    .ask span { color: rgba(255,255,255,.72); font-size: 13px; }
-    .ask b { display: block; margin: 12px 0; font-size: 48px; line-height: 1; }
-    .use-list { display: grid; gap: 12px; }
-    .use {
-      display: grid;
-      grid-template-columns: 130px 1fr 56px;
-      gap: 14px;
-      align-items: center;
-    }
-    .bar { height: 10px; background: #e8edf5; }
-    .bar i { display: block; height: 100%; background: var(--blue); }
-    .use:nth-child(2) .bar i { background: var(--teal); }
-    .use:nth-child(3) .bar i { background: var(--green); }
-    .use:nth-child(4) .bar i { background: var(--amber); }
-    .use span { color: var(--muted); font-size: 13px; }
-
-    .metric-strip {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 14px;
-    }
-    .metric {
-      padding: 18px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-    }
-    .metric b { display: block; color: #7df0c2; font-size: 26px; }
-    .metric span { color: #bac8da; font-size: 13px; }
-
-    .footer {
-      color: #aebbd0;
-      background: #081120;
-      padding: 30px 0;
-      font-size: 13px;
-    }
-    .footer .shell {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 960px) {
-      .links a { display: none; }
-      .hero-grid,
-      .section-head,
-      .solution,
-      .funding { grid-template-columns: 1fr; }
-      .grid-4,
-      .business,
-      .roadmap,
-      .metric-strip { grid-template-columns: repeat(2, 1fr); }
-      .grid-3,
-      .grid-2,
-      .moat { grid-template-columns: 1fr; }
-      .pain-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width: 640px) {
-      .shell { width: min(100% - 28px, 1160px); }
-      .hero { padding: 62px 0 44px; }
-      .section { padding: 56px 0; }
-      .grid-4,
-      .business,
-      .roadmap,
-      .metric-strip,
-      .pain-grid { grid-template-columns: 1fr; }
-      .use { grid-template-columns: 1fr; }
-      th, td { padding: 12px; }
-      table { min-width: 760px; }
-      .table-wrap { overflow-x: auto; }
-    }
-
-    @media print {
-      .topbar { display: none; }
-      body { background: #fff; }
-      .section, .hero { break-inside: avoid; }
-      .card, .screen, table { box-shadow: none; }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="北京润序科技有限责任公司专注 AI Agent 平台项目管理、战略 PMO、复杂项目交付治理和产研效能提升，帮助技术型组织搭建可复制、可度量、可交付的项目管理体系。" />
+  <meta name="keywords" content="北京润序科技, Runxu Tech, AI Agent 项目管理, 战略 PMO, 项目治理, 产研效能, CMMI, 项目成功率评测" />
+  <meta property="og:title" content="北京润序科技｜AI Agent 与战略 PMO 项目诊断" />
+  <meta property="og:description" content="预约 30 分钟项目诊断，识别复杂项目风险、治理优先级和交付改进路径。" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#06101F" />
+  <title>北京润序科技有限责任公司｜AI Agent 与战略 PMO 项目管理咨询</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css?v=20260714-contrast" />
 </head>
 <body>
-  <header class="topbar">
-    <nav class="nav shell" aria-label="页面导航">
-      <a class="brand" href="#top"><span class="brand-mark"></span><span>Delivery OS商业计划书</span></a>
-      <div class="links">
-        <a href="#summary">摘要</a>
-        <a href="#problem">痛点</a>
-        <a href="#product">产品</a>
-        <a href="#business">商业模式</a>
-        <a href="#funding">融资</a>
-        <a href="Delivery-OS商业计划书.pptx">PPT</a>
-        <button class="print" type="button" onclick="window.print()">打印 / 导出 PDF</button>
-      </div>
+  <div class="page-glow"></div>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Runxu Tech 首页">
+      <span class="brand-mark"></span>
+      <span>RUNXU TECH</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#services">服务</a>
+      <a href="#work">案例</a>
+      <a href="#method">方法</a>
+      <a href="#diagnostic">评测</a>
+      <a href="#about">关于</a>
     </nav>
+    <a class="button button-small" href="#contact">项目诊断 <span>↗</span></a>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="shell hero-grid">
-        <div>
-          <p class="eyebrow">Investor Business Plan · 2026.07</p>
-          <h1>Delivery OS：客户现有工具之上的交付治理平台</h1>
-          <p class="hero-copy">润序数智科技有限公司面向复杂知识工作，提供项目管理体系诊断、风险预警、Agent协同与交付治理闭环。机会不在替代飞书、Jira或禅道，而在连接这些工具，把分散过程数据转化为可解释的管理判断和行动建议。</p>
-          <div class="hero-meta">
-            <span>交付治理平台</span>
-            <span>证据可追溯</span>
-            <span>规则 + 模型双引擎</span>
-            <span>SaaS / 专属云 / 私有化</span>
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> AI AGENT · STRATEGIC PMO · DELIVERY GOVERNANCE</p>
+        <h1>AI Agent ×<br />战略 PMO ×<br /><em>复杂项目交付</em></h1>
+        <p class="hero-intro">北京润序科技帮助技术型组织从 0 到 1 搭建可复制、可度量、可交付的项目管理体系，让复杂项目按目标、按节奏、按质量落地。</p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">预约 30 分钟项目诊断 <span>→</span></a>
+          <a class="text-link" href="#work">查看案例 <span>↘</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="项目治理与效能看板视觉">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="metric-card">
+          <span>产研效能提升</span>
+          <strong>20%+</strong>
+          <div class="sparkline">
+            <i style="height:30%"></i><i style="height:38%"></i><i style="height:44%"></i>
+            <i style="height:55%"></i><i style="height:62%"></i><i style="height:70%"></i>
+            <i style="height:78%"></i><i style="height:90%"></i>
           </div>
         </div>
-        <aside class="thesis">
-          <b>核心判断</b>
-          <h2>先卖交付改善结果，再沉淀标准化平台。</h2>
-          <p>早期用诊断服务和实施交付验证客户付费意愿，围绕需求质量、延期风险、返工率和复盘采纳率证明ROI，再扩展为多场景模板与Agent市场。</p>
-        </aside>
+        <div class="signal-dot"></div>
+        <p class="visual-note">01 / FROM CHAOS<br />TO DELIVERY SYSTEM</p>
       </div>
     </section>
 
-    <section id="summary" class="section white">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Executive Summary</span>
-            <h2>投资摘要</h2>
-          </div>
-          <p>项目管理正在从“记录工具”进入“交付治理平台”。企业已有大量协作数据，但管理者仍难以稳定看到需求质量、交付风险、阻塞原因和改进闭环。</p>
-        </div>
-        <div class="grid-4">
-          <article class="card">
-            <div class="num">01</div>
-            <h3>强痛点</h3>
-            <p>需求不清、风险发现晚、延期和返工直接影响交付周期、客户满意度和管理成本。</p>
-          </article>
-          <article class="card">
-            <div class="num">02</div>
-            <h3>高客单</h3>
-            <p>诊断、实施、专属云和年度订阅组合收费，定价锚点是管理改善和项目损失减少。</p>
-          </article>
-          <article class="card">
-            <div class="num">03</div>
-            <h3>可扩展</h3>
-            <p>从研发交付切入，后续可扩展到运营增长、咨询交付、内容生产和客户成功。</p>
-          </article>
-          <article class="card">
-            <div class="num">04</div>
-            <h3>可验证</h3>
-            <p>用3-5个标杆客户验证付费意愿、ROI量化和交付标准化能力。</p>
-          </article>
-        </div>
+    <section class="proof">
+      <div class="shell proof-grid">
+        <p>服务 AI 团队、技术组织、ToB / ToC 产品团队与服务型 PMO 组织</p>
+        <strong>AI Agent</strong><strong>战略 PMO</strong><strong>效能体系</strong><strong>复杂交付</strong>
       </div>
     </section>
 
-    <section id="problem" class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Problem</span>
-            <h2>客户不是没有工具，而是缺少持续治理能力</h2>
-          </div>
-          <p>协同工具、项目工具、知识库和聊天记录各自沉淀数据，但缺少统一任务模型、证据链和可执行的管理闭环。</p>
-        </div>
-        <div class="pain-grid">
-          <article class="pain">
-            <h3>需求不清</h3>
-            <p>PRD、任务和验收标准散落在文档、表格与聊天记录中，边界不清导致反复返工。</p>
-          </article>
-          <article class="pain">
-            <h3>风险滞后</h3>
-            <p>项目经理靠周会和人工追问识别风险，问题暴露时已经影响交付周期。</p>
-          </article>
-          <article class="pain">
-            <h3>过程不透明</h3>
-            <p>管理者看到汇总结果，却看不到阻塞依赖、资源瓶颈和责任链路。</p>
-          </article>
-          <article class="pain">
-            <h3>复盘不沉淀</h3>
-            <p>项目结束后经验留在个人脑子里，下一次仍然重复同样的问题。</p>
-          </article>
-          <article class="pain">
-            <h3>工具割裂</h3>
-            <p>飞书、Jira、禅道、Git、客服和知识库各管一段，缺少统一判断层。</p>
-          </article>
-          <article class="pain">
-            <h3>AI难落地</h3>
-            <p>通用大模型能生成文本，但缺少权限、证据、流程和责任边界。</p>
-          </article>
-        </div>
+    <section class="stats shell" aria-label="核心数据背书">
+      <article><strong>18年</strong><span>技术 + 管理复合经验</span></article>
+      <article><strong>90+</strong><span>并发项目统筹</span></article>
+      <article><strong>1000+</strong><span>大型项目协同规模</span></article>
+      <article><strong>亿级</strong><span>大型直播高并发场景</span></article>
+      <article><strong>70%+</strong><span>线上问题反馈率降低</span></article>
+      <article><strong>20%+</strong><span>产研效能提升</span></article>
+    </section>
+
+    <section class="section shell" id="services">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> WHAT WE DO</p>
+        <h2>把复杂项目，变成有节奏的交付系统</h2>
+        <p>围绕目标拆解、项目治理、流程体系、工具链和效能度量，帮助团队建立可持续运转的产研管理机制。</p>
+      </div>
+      <div class="pain-grid" aria-label="典型项目痛点">
+        <article><span>01</span><strong>项目延期反复发生</strong><p>目标、范围、依赖和关键路径不清，推进靠个人盯。</p></article>
+        <article><span>02</span><strong>跨团队协同低效</strong><p>产品、研发、算法、测试、运营之间职责和节奏不一致。</p></article>
+        <article><span>03</span><strong>需求频繁变化</strong><p>变更缺少评估、审批和影响说明，交付节奏被持续打断。</p></article>
+        <article><span>04</span><strong>上线质量不稳定</strong><p>缺少准入准出、风险预案、发布门禁和复盘闭环。</p></article>
+      </div>
+      <div class="service-list">
+        <article>
+          <span class="index">01</span>
+          <div><h3>AI Agent 平台项目管理</h3><p>覆盖产品规划、需求定义、研发推进、测试验收与上线发布，推动 Agent 平台从概念走向交付。</p></div>
+          <span class="arrow">↗</span>
+        </article>
+        <article>
+          <span class="index">02</span>
+          <div><h3>战略 PMO 与项目治理</h3><p>对齐业务目标，拆解项目组合、里程碑、资源、风险与质量，建立跨团队协作机制。</p></div>
+          <span class="arrow">↗</span>
+        </article>
+        <article>
+          <span class="index">03</span>
+          <div><h3>产研流程体系 0→1→N 搭建</h3><p>建立产研 SOP、版本准入准出、分支模型、Jira/禅道/飞书多维表格和 CICD 流程。</p></div>
+          <span class="arrow">↗</span>
+        </article>
+        <article>
+          <span class="index">04</span>
+          <div><h3>效能度量与交付质量提升</h3><p>设计北极星指标和效能看板，用数据跟踪吞吐、质量、风险与线上反馈，推动持续改进。</p></div>
+          <span class="arrow">↗</span>
+        </article>
+      </div>
+      <div class="package-grid" aria-label="润序科技服务包">
+        <article>
+          <span>PACKAGE 01</span>
+          <h3>项目诊断</h3>
+          <p>通过访谈、问卷和交付资料梳理，输出项目风险清单、治理优先级和初步改进建议。</p>
+        </article>
+        <article>
+          <span>PACKAGE 02</span>
+          <h3>PMO 体系搭建</h3>
+          <p>建立项目组合管理、里程碑、风险机制、版本门禁、复盘和组织级模板。</p>
+        </article>
+        <article>
+          <span>PACKAGE 03</span>
+          <h3>AI Agent 项目交付陪跑</h3>
+          <p>陪跑 Agent 产品从需求定义、研发推进、测试验收到上线发布的完整交付链路。</p>
+        </article>
+        <article>
+          <span>PACKAGE 04</span>
+          <h3>效能看板建设</h3>
+          <p>设计项目健康度、吞吐、延期、缺陷、风险和线上反馈指标，推动数据化改进。</p>
+        </article>
       </div>
     </section>
 
-    <section id="market" class="section white">
+    <section class="work-section" id="work">
       <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Market</span>
-            <h2>市场窗口：AI让协作软件重新定义价值边界</h2>
-          </div>
-          <p>企业数字化工具已经普及，AI能力逐步成熟。新的价值不只是“更快写报告”，而是把过程数据治理为可解释、可追责、可复用的管理系统。</p>
+        <div class="section-heading inverse">
+          <p class="eyebrow"><span></span> SELECTED WORK</p>
+          <h2>来自真实复杂项目的一线经验</h2>
         </div>
-        <div class="grid-3">
-          <article class="card">
-            <span class="tag">TAM</span>
-            <h3>复杂协作组织</h3>
-            <p>所有存在跨团队、跨项目、跨知识工作的企业和机构，处于企业协作软件、AI应用和管理咨询的交叉市场。</p>
+        <div class="cases">
+          <article class="case case-blue">
+            <div class="case-meta"><span>BYTE DANCE · PMO</span><span>0→1→N</span></div>
+            <h3>多业务线 PMO<br />体系搭建</h3>
+            <p>搭建项目管理体系、产研 SOP、版本准入准出机制与效能看板。</p>
+            <div class="case-result"><strong>70%+</strong><span>线上问题反馈率降低</span></div>
           </article>
-          <article class="card">
-            <span class="tag green">SAM</span>
-            <h3>项目型组织</h3>
-            <p>软件研发、数字化项目、咨询交付、内容运营等团队最先具备数据基础和付费动机。</p>
+          <article class="case case-lime">
+            <div class="case-meta"><span>LARGE LIVE EVENT</span><span>2022</span></div>
+            <h3>大型体育赛事直播<br />稳定交付</h3>
+            <p>统筹千人级协同、多业务线保障和全链路风险预案，支撑高并发直播场景。</p>
+            <div class="case-result"><strong>亿级</strong><span>峰值并发场景</span></div>
           </article>
-          <article class="card">
-            <span class="tag amber">SOM</span>
-            <h3>早期可服务市场</h3>
-            <p>前1-2年目标20-50家企业客户；按年化10-30万元/客户，形成约200万-1500万元收入区间。</p>
+          <article class="case case-dark">
+            <div class="case-meta"><span>AI AGENT PLATFORM</span><span>2026</span></div>
+            <h3>AI Agent 平台<br />从 0 到 1 发布</h3>
+            <p>主导产品规划、需求定义、研发推进、测试验收和首发上线。</p>
+            <div class="case-result"><strong>50人</strong><span>跨职能团队协同</span></div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="product" class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Product</span>
-            <h2>产品方案：四层能力形成治理闭环</h2>
-          </div>
-          <p>Delivery OS默认以只读方式接入客户现有工具，形成统一任务模型，再由Agent体系输出诊断、建议、看板、周报和复盘材料。</p>
-        </div>
-        <div class="solution">
-          <figure class="screen">
-            <img src="assets/delivery-os-product-modules.png" alt="Delivery OS产品模块示意图" />
-            <figcaption>产品由AI协同工作台、Agent协同中心、知识与数据底座、报告与治理闭环构成。</figcaption>
-          </figure>
-          <div class="flow">
-            <article class="flow-step">
-              <strong>1</strong>
-              <div>
-                <h3>数据连接</h3>
-                <p>接入飞书、表格、Jira、禅道、Git、文档、知识库和历史项目。</p>
-              </div>
-            </article>
-            <article class="flow-step">
-              <strong>2</strong>
-              <div>
-                <h3>统一模型</h3>
-                <p>把需求、任务、缺陷、风险、成员、文档和产出映射为统一任务模型。</p>
-              </div>
-            </article>
-            <article class="flow-step">
-              <strong>3</strong>
-              <div>
-                <h3>Agent协同</h3>
-                <p>调用需求分析、风险识别、质量检查、效能分析和报告生成Agent共同工作。</p>
-              </div>
-            </article>
-            <article class="flow-step">
-              <strong>4</strong>
-              <div>
-                <h3>治理闭环</h3>
-                <p>输出诊断报告、改进计划、看板、审批回写、通知和复盘沉淀。</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="business" class="section white">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Business Model</span>
-            <h2>商业模式：服务验证价值，平台复制交付</h2>
-          </div>
-          <p>早期不做低价工具账号竞争，定价锚点放在项目延期、返工、管理人力和客户满意度改善上。</p>
-        </div>
-        <div class="business">
-          <article class="card price">
-            <h3>诊断服务</h3>
-            <b>1-5万元/次</b>
-            <p>交付项目健康诊断、问题清单、风险判断和改进路线。</p>
-          </article>
-          <article class="card price">
-            <h3>实施交付</h3>
-            <b>5-30万元/项目</b>
-            <p>配置流程、字段、知识库、看板、Agent和审批回写机制。</p>
-          </article>
-          <article class="card price">
-            <h3>平台订阅</h3>
-            <b>3-20万元/年</b>
-            <p>按空间、账号、连接器、Agent任务量和场景模板收费。</p>
-          </article>
-          <article class="card price">
-            <h3>专属云 / 私有化</h3>
-            <b>20-100万元+/年</b>
-            <p>满足高安全、数据隔离、审计和SLA要求的企业客户。</p>
+          <article class="case case-paper">
+            <div class="case-meta"><span>MULTIMODAL AI</span><span>2025</span></div>
+            <h3>多模态视频理解<br />平台落地</h3>
+            <p>融合视觉、语音、文本能力，支撑大规模视频处理、内容理解和业务增长。</p>
+            <div class="case-result"><strong>高准确</strong><span>视频分类与理解</span></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">ICP</span>
-            <h2>首批客户聚焦有复杂项目、有预算、有数据基础的组织</h2>
-          </div>
-          <p>最佳早期ICP是正在使用飞书、表格、Jira、禅道等工具，但仍无法稳定看到需求质量、交付风险、阻塞原因和改进闭环的企业团队。</p>
-        </div>
-        <div class="grid-4">
-          <article class="card">
-            <span class="tag">软件 / AI创业公司</span>
-            <p>20-300人；需求变化快、项目风险高、研发和产品协作压力大。</p>
-          </article>
-          <article class="card">
-            <span class="tag green">制造 / 数字化团队</span>
-            <p>50-1000人；跨部门项目多、供应商协同难、过程难追溯。</p>
-          </article>
-          <article class="card">
-            <span class="tag amber">咨询 / 交付机构</span>
-            <p>10-200人；顾问交付依赖个人经验，报告生产和复盘成本高。</p>
-          </article>
-          <article class="card">
-            <span class="tag violet">运营 / 内容团队</span>
-            <p>5-100人；活动、素材、任务和复盘分散，推进靠人工催办。</p>
-          </article>
-        </div>
+    <section class="section shell method" id="method">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> RUNXU METHOD</p>
+        <h2>从目标拆解到体系落地</h2>
+        <p>润序科技关注的不只是项目进度，而是让组织拥有持续交付复杂项目的能力。</p>
+      </div>
+      <div class="method-steps">
+        <article><span>01</span><h3>目标对齐</h3><p>明确业务目标、成功指标、关键约束和决策机制。</p></article>
+        <article><span>02</span><h3>项目拆解</h3><p>拆解项目集、里程碑、依赖、风险和资源路径。</p></article>
+        <article><span>03</span><h3>体系搭建</h3><p>建立 SOP、版本机制、协作流程和工具链。</p></article>
+        <article><span>04</span><h3>数据度量</h3><p>用效能看板跟踪质量、效率、风险和线上反馈。</p></article>
+        <article><span>05</span><h3>持续改进</h3><p>通过复盘和数据分析推动组织效率持续提升。</p></article>
       </div>
     </section>
 
-    <section id="competition" class="section white">
+    <section class="diagnostic-section" id="diagnostic">
       <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Competition</span>
-            <h2>竞争策略：不替换工具，做上层诊断和治理</h2>
-          </div>
-          <p>Delivery OS的差异是连接现有工具，输出证据化诊断、Agent协同建议和持续治理闭环。</p>
+        <div class="section-heading inverse">
+          <p class="eyebrow"><span></span> DIAGNOSTIC MODEL</p>
+          <h2>CMMI × 项目成功率诊断模型</h2>
+          <p>用一套轻量评测问卷，帮助团队识别流程成熟度、交付风险和项目成功概率，作为 PMO 体系建设的切入点。</p>
         </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>替代方案</th>
-                <th>客户现在怎么做</th>
-                <th>主要不足</th>
-                <th>Delivery OS切入点</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>飞书 / 钉钉 / 企微</td>
-                <td>协同、审批、文档、消息</td>
-                <td>不直接给项目治理判断</td>
-                <td>在现有协作数据上形成管理诊断</td>
-              </tr>
-              <tr>
-                <td>Jira / 禅道 / TAPD</td>
-                <td>需求、任务、缺陷、迭代</td>
-                <td>记录强，复盘和跨项目洞察弱</td>
-                <td>跨项目解释风险与阻塞原因</td>
-              </tr>
-              <tr>
-                <td>BI / 数据看板</td>
-                <td>指标展示和趋势分析</td>
-                <td>能看结果，难解释原因和行动</td>
-                <td>把指标转化为行动建议和责任链路</td>
-              </tr>
-              <tr>
-                <td>管理咨询 / PMO</td>
-                <td>人工诊断、制度建设、项目跟踪</td>
-                <td>成本高，依赖个人经验</td>
-                <td>把经验沉淀成规则、模板和Agent流程</td>
-              </tr>
-              <tr>
-                <td>通用大模型</td>
-                <td>问答、总结、报告生成</td>
-                <td>缺少权限、证据和流程闭环</td>
-                <td>受控Agent、证据链和审批回写</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section id="moat" class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Moat</span>
-            <h2>壁垒来自业务模型、证据链和可控Agent</h2>
-          </div>
-          <p>单纯调用大模型并不构成壁垒。Delivery OS需要把项目治理方法、客户过程数据、规则引擎、模型评测和受控Agent机制沉淀为系统能力。</p>
-        </div>
-        <div class="moat">
-          <article class="card">
-            <h3>统一任务模型</h3>
-            <p>沉淀目标、需求、任务、缺陷、风险、文档、人员、产出的关系图谱。</p>
+        <div class="diagnostic-grid">
+          <article class="maturity-card">
+            <span>01</span>
+            <h3>CMMI 成熟度映射</h3>
+            <ol>
+              <li><strong>L1 初始级：</strong>依赖个人经验，过程不可重复。</li>
+              <li><strong>L2 已管理级：</strong>项目计划、进度、风险开始受控。</li>
+              <li><strong>L3 已定义级：</strong>组织级流程、模板、评审机制形成。</li>
+              <li><strong>L4 量化管理级：</strong>用数据管理质量、效率和预测。</li>
+              <li><strong>L5 优化级：</strong>持续改进，形成组织级交付能力。</li>
+            </ol>
           </article>
-          <article class="card">
-            <h3>规则 + 模型双引擎</h3>
-            <p>CMMI/IPD/项目治理规则负责稳定判断，大模型负责理解、解释和建议。</p>
-          </article>
-          <article class="card">
-            <h3>证据可追溯</h3>
-            <p>每个结论关联来源系统、字段、更新时间、模型版本和判断依据。</p>
-          </article>
-          <article class="card">
-            <h3>受控Agent体系</h3>
-            <p>Agent具备独立身份、权限范围、工具白名单、预算、超时和人工审批机制。</p>
-          </article>
-          <article class="card">
-            <h3>可部署架构</h3>
-            <p>SaaS、专属云、私有化共用代码基线，适配不同安全要求。</p>
-          </article>
-          <article class="card">
-            <h3>评测与复盘数据</h3>
-            <p>用诊断结果、采纳率和历史项目反馈持续训练规则、模板和提示策略。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="roadmap" class="section white">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Roadmap</span>
-            <h2>落地路径：用标杆客户验证，再扩展场景模板</h2>
-          </div>
-          <p>第一阶段成功标准是客户愿意为诊断/实施付费，报告被管理层采纳，风险识别和周报复盘明显减少人工工作量。</p>
-        </div>
-        <div class="roadmap">
-          <article class="stage">
-            <small>0-3个月</small>
-            <h3>MVP与标杆试点</h3>
-            <p>飞书/表格导入、需求分析Agent、风险诊断报告。</p>
-          </article>
-          <article class="stage">
-            <small>3-6个月</small>
-            <h3>企业闭环交付</h3>
-            <p>连接器、知识库、看板、周报/复盘、人工审批回写。</p>
-          </article>
-          <article class="stage">
-            <small>6-12个月</small>
-            <h3>产品化销售</h3>
-            <p>标准套餐、专属云部署、行业模板、客户成功流程。</p>
-          </article>
-          <article class="stage">
-            <small>12个月+</small>
-            <h3>规模化复制</h3>
-            <p>多场景Agent市场、生态连接器、私有化交付包。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="team" class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Team</span>
-            <h2>团队定位：用项目治理经验驱动AI产品</h2>
-          </div>
-          <p>当前能力基础包括项目管理体系、CMMI/IPD、需求质量评估、AI Agent产品设计、企业交付与诊断。下一阶段应补齐销售、行业方案、连接器工程、模型评测和客户成功能力。</p>
-        </div>
-        <div class="grid-2">
-          <article class="card">
-            <h3>已有能力</h3>
-            <p>项目管理体系、CMMI/IPD、需求质量评估、AI Agent产品设计、企业交付与诊断。</p>
-          </article>
-          <article class="card">
-            <h3>关键补位</h3>
-            <p>标杆客户销售、行业解决方案、连接器与数据工程、模型评测与安全治理、客户成功。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="funding" class="section white">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Funding</span>
-            <h2>融资计划：先验证可复制的企业付费闭环</h2>
-          </div>
-          <p>融资金额为当前BP建议口径，可按实际融资计划、估值和出让比例调整。</p>
-        </div>
-        <div class="funding">
-          <div class="ask">
-            <span>拟融资</span>
-            <b>300-500万元</b>
-            <p>融资后12个月目标：完成MVP，交付3-5个标杆客户，沉淀2-3个标准场景模板，形成可复制的诊断 + 平台订阅销售路径。</p>
-          </div>
-          <div class="card">
-            <h3>资金用途建议</h3>
-            <div class="use-list">
-              <div class="use">
-                <span>产品研发</span>
-                <div class="bar"><i style="width:40%"></i></div>
-                <span>40%</span>
-              </div>
-              <div class="use">
-                <span>客户试点</span>
-                <div class="bar"><i style="width:25%"></i></div>
-                <span>25%</span>
-              </div>
-              <div class="use">
-                <span>销售市场</span>
-                <div class="bar"><i style="width:20%"></i></div>
-                <span>20%</span>
-              </div>
-              <div class="use">
-                <span>运维合规</span>
-                <div class="bar"><i style="width:15%"></i></div>
-                <span>15%</span>
-              </div>
+          <article class="score-card">
+            <span>02</span>
+            <h3>项目成功率评分</h3>
+            <p class="score-number">0-100</p>
+            <p>从目标清晰度、需求稳定性、组织协同、风险管理、质量保障、数据度量、工具链和复盘机制 8 个维度打分。</p>
+            <div class="score-levels">
+              <i>85+ 高成功概率</i>
+              <i>70-84 可控推进</i>
+              <i>55-69 需要治理</i>
+              <i>&lt;55 高风险</i>
             </div>
+          </article>
+          <article class="question-card">
+            <span>03</span>
+            <h3>售前评测问卷</h3>
+            <p>15 分钟完成自评，输出团队当前成熟度、项目主要风险、优先治理项和建议 PMO 改进路径。</p>
+            <ul>
+              <li>适合 AI Agent、平台型产品、ToB / ToC 复杂项目与服务型 PMO 团队。</li>
+              <li>可作为咨询前诊断、项目复盘或 PMO 体系建设起点。</li>
+              <li>非官方 CMMI 评估，用于管理诊断和改进建议。</li>
+            </ul>
+            <a class="diagnostic-link" href="./questionnaire.html">开始自评 <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="founder">
+        <div>
+          <p class="eyebrow"><span></span> FOUNDER PROFILE</p>
+          <h2>技术出身，管理落地，长期服务 ToB / ToC 与服务型 PMO 组织</h2>
+        </div>
+        <div class="founder-card">
+          <h3>范丽丽</h3>
+          <p>高级项目经理 · TPM & PMO · PMP · CMMI3 评估师</p>
+          <p>18 年技术 + 管理复合经验，经历覆盖 AI Agent、AI 大模型、音视频、云游戏、Android 系统、ToB / ToC 产品交付、服务型 PMO 与战略 PMO。</p>
+          <div class="tags">
+            <span>字节跳动集团奖</span>
+            <span>Spot Bonus</span>
+            <span>360 年度优秀个人</span>
+            <span>0-1 体系建设</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="validation" class="section dark">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <span class="kicker">Validation</span>
-            <h2>投资人应关注的下一步验证问题</h2>
-          </div>
-          <p>如果以下问题被验证，Delivery OS就不是一次性咨询项目，而是可以从服务型收入走向平台型收入。</p>
+    <section class="contact" id="contact">
+      <div class="shell contact-inner">
+        <div>
+          <p class="eyebrow"><span></span> START A PROJECT</p>
+          <h2>正在搭建 AI Agent、PMO 或复杂项目交付体系？</h2>
+          <p class="contact-copy">预约 30 分钟项目诊断。你可以带着当前项目目标、计划、风险或问卷结果来沟通，我们会帮助你识别项目风险清单、治理优先级和下一阶段改进路径。</p>
+          <a class="contact-link" href="mailto:Laura_fan@126.com">Laura_fan@126.com <span>↗</span></a>
         </div>
-        <div class="metric-strip">
-          <div class="metric">
-            <b>3-5家</b>
-            <span>标杆客户真实付费</span>
-          </div>
-          <div class="metric">
-            <b>ROI</b>
-            <span>需求质量、风险提前识别、返工率可量化</span>
-          </div>
-          <div class="metric">
-            <b>2-3个</b>
-            <span>标准场景模板沉淀</span>
-          </div>
-          <div class="metric">
-            <b>可复制</b>
-            <span>字段映射、规则、Agent流程和案例库复用</span>
-          </div>
-          <div class="metric">
-            <b>续费</b>
-            <span>诊断服务转向年度订阅</span>
-          </div>
+        <div class="qr-card" aria-label="飞书二维码">
+          <img src="./assets/feishu-qr.jpg" alt="元序 AI 飞书联系人二维码" />
+          <p>扫码添加飞书联系人</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="shell">
-      <span>润序数智科技有限公司 · Delivery OS · 交付治理平台</span>
-      <span>附注：本BP中的市场与融资测算用于早期沟通，需结合真实试点数据持续修正。</span>
-    </div>
+  <footer class="shell footer">
+    <a class="brand" href="#top"><span class="brand-mark"></span><span>RUNXU TECH</span></a>
+    <p>© 2026 北京润序科技有限责任公司. Runxu Tech.</p>
+    <a href="#top">返回顶部 ↑</a>
   </footer>
 </body>
 </html>
