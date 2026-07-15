@@ -12,6 +12,7 @@ COPY assets ./assets
 COPY config ./config
 COPY scripts ./scripts
 
+RUN apk add --no-cache sqlite
 RUN mkdir -p /app/data/exports
 
 EXPOSE 8765
