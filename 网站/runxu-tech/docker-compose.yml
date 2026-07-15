@@ -1,0 +1,16 @@
+services:
+  runxu-tech:
+    build: .
+    container_name: runxu-tech
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 8765
+      DATABASE_PATH: /app/data/runxu-leads.sqlite
+    ports:
+      - "8765:8765"
+    volumes:
+      - ./data:/app/data
