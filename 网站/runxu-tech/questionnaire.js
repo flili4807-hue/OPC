@@ -296,6 +296,10 @@ function setState(nextState) {
 }
 
 function openLeadModal() {
+  if (appState === 'unlocked') {
+    unlockedReport?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return;
+  }
   restoreLeadDraft();
   leadModal.hidden = false;
   setState('form_open');
@@ -313,6 +317,27 @@ function clearErrors() {
   leadForm.querySelectorAll('.is-invalid').forEach((node) => node.classList.remove('is-invalid'));
   leadStatus.textContent = '';
   leadStatus.className = 'lead-status';
+}
+
+function setLeadStatus(type, message) {
+  leadStatus.className = type ? `lead-status is-${type}` : 'lead-status';
+  leadStatus.textContent = message;
+}
+
+function setSubmitButton(state) {
+  if (!submitLeadButton) return;
+  if (state === 'submitting') {
+    submitLeadButton.disabled = true;
+    submitLeadButton.innerHTML = '提交中，请稍候...';
+    return;
+  }
+  if (state === 'success') {
+    submitLeadButton.disabled = true;
+    submitLeadButton.innerHTML = '已提交，正在打开报告 <span>✓</span>';
+    return;
+  }
+  submitLeadButton.disabled = false;
+  submitLeadButton.innerHTML = '提交并生成报告 <span>→</span>';
 }
 
 function setFieldError(field, message) {
@@ -375,21 +400,25 @@ function isStaticHosting() {
 
 function unlockReportLocally() {
   sessionStorage.removeItem(LEAD_DRAFT_KEY);
-  leadModal.hidden = true;
   setState('unlocked');
-  unlockedReport?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  setSubmitButton('success');
+  setLeadStatus('success', '提交成功，诊断报告已生成。正在为你打开报告...');
+  window.setTimeout(() => {
+    leadModal.hidden = true;
+    unlockedReport?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 700);
 }
 
 async function submitLead(event) {
   event.preventDefault();
+  if (appState === 'submitting' || submitLeadButton.disabled) return;
   const { valid, values } = validateLeadForm();
   if (!valid) return;
   saveLeadDraft();
   setState('submitting');
-  submitLeadButton.disabled = true;
-  submitLeadButton.innerHTML = '提交中...';
-  leadStatus.className = 'lead-status';
-  leadStatus.textContent = '正在保存线索并生成报告...';
+  setSubmitButton('submitting');
+  setLeadStatus('', '正在提交并生成报告，请勿重复点击...');
+  let shouldRestoreButton = true;
 
   const payload = {
     profile: {
@@ -419,11 +448,14 @@ async function submitLead(event) {
       throw new Error(data.message || '提交失败，请稍后重试。');
     }
     sessionStorage.removeItem(LEAD_DRAFT_KEY);
-    leadStatus.className = 'lead-status is-success';
-    leadStatus.textContent = '线索已保存，报告已解锁。';
-    leadModal.hidden = true;
+    setLeadStatus('success', '提交成功，诊断报告已生成。我们已收到你的信息，将基于评测结果与你联系。');
+    setSubmitButton('success');
+    shouldRestoreButton = false;
     setState('unlocked');
-    unlockedReport?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.setTimeout(() => {
+      leadModal.hidden = true;
+      unlockedReport?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 900);
   } catch (error) {
     if (isStaticHosting()) {
       console.warn('[runxu] static hosting mode, unlock report locally:', error);
@@ -431,11 +463,9 @@ async function submitLead(event) {
       return;
     }
     setState('failed');
-    leadStatus.className = 'lead-status is-error';
-    leadStatus.textContent = error.name === 'AbortError' ? '提交超时，请稍后重试。' : (error.message || '提交失败，请稍后重试。');
+    setLeadStatus('error', error.name === 'AbortError' ? '提交超时，请稍后重试。你的填写内容已保留。' : (error.message || '提交失败，请稍后重试。你的填写内容已保留。'));
   } finally {
-    submitLeadButton.disabled = false;
-    submitLeadButton.innerHTML = '提交并生成报告 <span>→</span>';
+    if (shouldRestoreButton) setSubmitButton('default');
   }
 }
 
