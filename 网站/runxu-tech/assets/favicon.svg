@@ -1,6 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="18" fill="#06101F"/>
-  <path d="M18 36c9-18 19-18 28 0" fill="none" stroke="#3978FF" stroke-width="7" stroke-linecap="round"/>
-  <path d="M22 42c7-8 13-8 20 0" fill="none" stroke="#C9FF57" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="32" cy="25" r="5" fill="#F5F8FF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Runxu Tech">
+  <defs>
+    <linearGradient id="line" x1="16" y1="0" x2="50" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3978FF"/>
+      <stop offset="0.58" stop-color="#35C8F4"/>
+      <stop offset="1" stop-color="#6EE7F9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#06101F"/>
+  <circle cx="16" cy="18" r="3.2" fill="#3978FF"/>
+  <circle cx="12" cy="32" r="3.2" fill="#3978FF"/>
+  <circle cx="16" cy="46" r="3.2" fill="#3978FF"/>
+  <circle cx="25" cy="32" r="3.2" fill="#35D7ED"/>
+  <path d="M29 20C35 20 35 27 42 27H49" fill="none" stroke="url(#line)" stroke-width="4.8" stroke-linecap="round"/>
+  <path d="M29 32H49" fill="none" stroke="url(#line)" stroke-width="4.8" stroke-linecap="round"/>
+  <path d="M29 44C35 44 35 37 42 37H49" fill="none" stroke="url(#line)" stroke-width="4.8" stroke-linecap="round"/>
+  <circle cx="51" cy="27" r="4.2" fill="#3978FF"/>
+  <circle cx="51" cy="37" r="4.2" fill="#6EE7F9"/>
+  <circle cx="51" cy="47" r="4.2" fill="#C9FF57"/>
 </svg>

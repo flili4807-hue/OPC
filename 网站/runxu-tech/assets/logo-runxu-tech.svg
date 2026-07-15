@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 96" role="img" aria-label="RUNXU TECH">
+  <defs>
+    <linearGradient id="runxuLine" x1="28" y1="0" x2="88" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3978FF"/>
+      <stop offset="0.56" stop-color="#35C8F4"/>
+      <stop offset="1" stop-color="#6EE7F9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8 16)">
+    <circle cx="18" cy="16" r="3.4" fill="#3978FF"/>
+    <circle cx="12" cy="32" r="3.4" fill="#3978FF"/>
+    <circle cx="18" cy="48" r="3.4" fill="#3978FF"/>
+    <circle cx="30" cy="32" r="3.4" fill="#35D7ED"/>
+    <path d="M39 18C50 18 49 27 62 27H75" fill="none" stroke="url(#runxuLine)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M36 32H75" fill="none" stroke="url(#runxuLine)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M39 46C50 46 49 37 62 37H75" fill="none" stroke="url(#runxuLine)" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="78" cy="27" r="5" fill="#3978FF"/>
+    <circle cx="78" cy="37" r="5" fill="#6EE7F9"/>
+    <circle cx="78" cy="47" r="5" fill="#C9FF57"/>
+  </g>
+  <text x="126" y="57" fill="#F5F8FF" font-family="Inter, Arial, 'Helvetica Neue', sans-serif" font-size="28" font-weight="760" letter-spacing="7">RUNXU TECH</text>
+</svg>

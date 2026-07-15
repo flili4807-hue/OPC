@@ -67,7 +67,7 @@ select:focus-visible { border-color: var(--blue); }
   background: rgba(6, 16, 31, .68); backdrop-filter: blur(20px);
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 850; letter-spacing: .12em; }
-.brand-mark { width: 18px; height: 18px; background: var(--blue); border-radius: 50% 50% 4px 50%; transform: rotate(45deg); }
+.brand-logo { width: 44px; height: 30px; object-fit: contain; flex: 0 0 auto; filter: drop-shadow(0 0 14px rgba(57,120,255,.22)); }
 .nav nav { display: flex; gap: 34px; color: var(--muted); font-size: 14px; }
 .nav nav a:hover { color: var(--ink); }
 .button {
