@@ -11,6 +11,7 @@ services:
       PORT: 8765
       DATABASE_PATH: /app/data/runxu-leads.sqlite
     ports:
+      - "80:8765"
       - "8765:8765"
     volumes:
       - ./data:/app/data
