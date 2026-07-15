@@ -10,8 +10,8 @@
   <meta name="theme-color" content="#06101F" />
   <title>项目成功率自评｜北京润序科技 Runxu Tech</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./styles.css?v=20260715-logo" />
-  <script src="./questionnaire.js?v=20260714-v20" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=20260715-cmmi-rubric" />
+  <script src="./questionnaire.js?v=20260715-cmmi-rubric" defer></script>
 </head>
 <body class="questionnaire-page">
   <header class="nav shell">
@@ -62,6 +62,17 @@
           <span>55-69 需要治理</span>
           <span>40-54 高风险</span>
           <span>&lt;40 极高风险</span>
+        </div>
+        <div class="score-rubric" aria-label="0 到 5 分评分口径">
+          <h3>0-5 分评分口径</h3>
+          <dl>
+            <div><dt>0</dt><dd>没有做，或完全无证据。</dd></div>
+            <div><dt>1</dt><dd>偶尔做，主要依赖个人经验。</dd></div>
+            <div><dt>2</dt><dd>部分项目有做，但执行不稳定。</dd></div>
+            <div><dt>3</dt><dd>有明确流程，项目中基本执行。</dd></div>
+            <div><dt>4</dt><dd>有组织级标准，并能持续跟踪。</dd></div>
+            <div><dt>5</dt><dd>有数据驱动、量化管理和持续优化证据。</dd></div>
+          </dl>
         </div>
         <div class="locked-value" id="lockedValue">
           <strong>提交咨询信息后解锁完整治理建议</strong>
@@ -155,6 +166,10 @@
           <div class="report-block">
             <h3>下一步诊断重点</h3>
             <p id="nextActionText"></p>
+          </div>
+          <div class="report-block maturity-note">
+            <h3>L4 / L5 高成熟度补充说明</h3>
+            <p>如果希望向 CMMI L4-L5 高成熟度能力演进，不能只看流程是否存在，还需要验证是否具备组织级度量基线、过程性能目标、预测模型、根因分析、改进项闭环和效果验证。当前自评结果仅作为 CMMI 参考映射，正式评估仍需结合访谈、样本和过程证据。</p>
           </div>
           <p class="report-disclaimer">本工具用于项目管理诊断沟通，不等同于官方 CMMI 评估或认证，不是完整解决方案。</p>
         </div>

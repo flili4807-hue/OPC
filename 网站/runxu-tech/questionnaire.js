@@ -43,7 +43,7 @@ let resizeTimer = null;
 let copyTimer = null;
 
 function getScoreLevel(score) {
-  if (score >= 85) return { level: '高成功概率', cmmi: '参考映射：CMMI L4-L5', advice: '过程稳定，建议继续强化数据驱动和组织级最佳实践沉淀。' };
+  if (score >= 85) return { level: '高成功概率', cmmi: '参考映射：CMMI L4-L5', advice: '过程稳定，建议继续强化组织级度量基线、预测模型、根因分析和持续优化机制。' };
   if (score >= 70) return { level: '可控推进', cmmi: '参考映射：CMMI L3-L4', advice: '项目基本可控，建议加强风险前置、发布门禁和复盘闭环。' };
   if (score >= 55) return { level: '需要治理', cmmi: '参考映射：CMMI L2-L3', advice: '存在明显交付风险，建议优先补齐计划、依赖、风险和质量机制。' };
   if (score >= 40) return { level: '高风险', cmmi: '参考映射：CMMI L1-L2', advice: '项目强依赖个人推动，建议先做项目治理重构再加速交付。' };
@@ -225,6 +225,9 @@ ${weaknessLines}
 
 下一步建议：
 ${result.nextAction}
+
+L4 / L5 高成熟度补充说明：
+如需向 CMMI L4-L5 高成熟度能力演进，需要进一步验证组织级度量基线、过程性能目标、预测模型、根因分析、改进项闭环和效果验证。当前结果仅作为 CMMI 参考映射。
 
 说明：本工具用于项目管理诊断沟通，不等同于官方 CMMI 评估或认证，不是完整解决方案。`;
 }
